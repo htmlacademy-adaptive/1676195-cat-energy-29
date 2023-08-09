@@ -1,0 +1,31 @@
+.catalog-link {
+  font-family: @Title-font;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url("../../img/arrow.svg");
+    width: 32px;
+    height: 10px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    top: 6px;
+    left: 102px;
+  }
+}
+
+.catalog-link--pro {
+  position: relative;
+
+  &::after {
+    left: 98px;
+  }
+}
