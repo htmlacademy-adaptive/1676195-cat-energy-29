@@ -9,6 +9,7 @@
 }
 
 .button__promo {
+  text-align: center;
   display: block;
   text-decoration: none;
   padding: 10px 8px;
@@ -16,4 +17,14 @@
   line-height: 18px;
   position: relative;
   top: 140px;
+
+  @media (min-width: @tablet) {
+    width: 244px;
+    top: 0;
+    left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 18px;
+    z-index: 9;
+  }
 }
