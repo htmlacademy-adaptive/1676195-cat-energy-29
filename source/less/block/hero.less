@@ -45,12 +45,33 @@
       background-color: #ffffff;
       background-image: none;
     }
+
+    @media (min-width: @desktop) {
+      background-image: url("../../img/cat-background-desk.jpg");
+      background-color: #64a73d;
+      top: -144px;
+      width: 50%;
+      transform: translateX(100%);
+    }
   }
 }
 
 @media (min-width: @tablet) {
   .hero__wrapper {
     padding-bottom: 29px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .hero__wrapper {
+    padding-bottom: 88px;
+    padding-top: 64px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .hero__wrapper {
+    height: 697px;
   }
 }
 
@@ -72,8 +93,17 @@
     min-height: 609px;
     background-image: url("../../img/hero-tablet.png");
     background-color: transparent;
-    left: 0;
-    transform: translateY(431px);
+    left: 129px;
+    transform: translateY(-294px);
+  }
+
+  @media (min-width: @desktop) {
+    min-height: 609px;
+    background-image: url("../../img/hero-food-desktop.png");
+    background-color: transparent;
+    left: 112px;
+    transform: translateY(-297px);
+    z-index: 1;
   }
 }
 
@@ -100,6 +130,14 @@
     padding-right: 233px;
     padding-left: 119px;
     text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .hero__title {
+    margin: 14px auto 40px;
+    padding-right: 684px;
+    padding-left: 190px;
   }
 }
 

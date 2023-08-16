@@ -11,6 +11,8 @@
       <div class="main__logo-wrapper">
             <a class="main__logo">
               <picture>
+                <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg" width="70" height="59">
+                <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" width="60" height="50">
                 <img class="main__logo-image" src="img/logo-mobile.png" width="33" height="38" alt="магазин правильного питания для которов">
               </picture>
             </a>
@@ -101,16 +103,19 @@
               <div class="example__stats-item">
                 <span class="example__fact">60 дней</span>
                 <span class="example__fact-lable example__fact-align">затрачено времени</span>
+
               </div>
             </div>
-          </div>
-            <!-- слайдер естественно не сделан, пока толькао "заглушка-->
             <div class="example__total">
               <span class="example__total-text">Затраты на питание:</span>
               <span class="example__total-text">15 000 руб.</span>
             </div>
+          </div>
+            <!-- слайдер естественно не сделан, пока толькао "заглушка-->
+
             <div class="example__slider">
           <picture>
+            <source media=min-width:@tablet >
             <img src="img/viewport-tablet.png" alt="кот до и после" width="280" height="256">
           </picture>
         </div>
@@ -130,7 +135,8 @@
     </main>
     <footer class="footer">
       <div class="footer__map-block">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae4ae29ad31530569116f48baacc6d7d81a5564a0cdbc6c11c1368a296f695eb&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aae4ae29ad31530569116f48baacc6d7d81a5564a0cdbc6c11c1368a296f695eb&amp;source=constructor"  height="362" allowfullscreen title="Санкт-Петербург, ул. Большая
+Конюшенная, д. 19/8"></iframe>
       </div>
       <div class="footer__wrapper">
         <img class="footer__logo" src="img/textlogo.svg" width="128" height="24" alt="лолотип html-academy">
