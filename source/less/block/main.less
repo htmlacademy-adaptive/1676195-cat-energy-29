@@ -13,8 +13,31 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .main {
+    padding: 35px 31px 112px 23px;
+    background: url("../../img/svg/textlogo-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 194px 74px;
+  }
+}
+
 .main__logo {
   position: absolute;
   top: 13px;
   left: 19px;
+}
+
+@media (min-width: @tablet) {
+  .main__logo {
+    top: 26px;
+    left: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main__logo {
+    top: 56px;
+    left: 110px;
+  }
 }
