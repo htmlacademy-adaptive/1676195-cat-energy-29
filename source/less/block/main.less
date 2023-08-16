@@ -1,7 +1,16 @@
 .main {
   position: relative;
   padding: 42px 11px 0;
-  background: url("../../img/textlogo.svg") no-repeat center 22px;
+  background: url("../../img/textlogo.svg");
+  background-repeat: no-repeat;
+  background-position: center 22px;
+}
+
+@media (min-width: @tablet) {
+  .main {
+    padding: 0 31px 112px 23px;
+    background-position: 102px 41px;
+  }
 }
 
 .main__logo {
