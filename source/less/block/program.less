@@ -3,13 +3,19 @@
   padding-bottom: 24px;
 }
 
+@media (min-width: @tablet) {
+  .program__wrapper {
+    padding: 0 10px;
+  }
+}
+
 .program__list {
   list-style: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.program-title {
+.program__title {
   font-family: @Title-font;
   color: @prime-font;
   font-size: 24px;
@@ -20,14 +26,38 @@
   text-align: center;
 }
 
-.program-title--slim {
+@media (min-width: @tablet) {
+  .program__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+  }
+}
+
+.program__title--slim {
   margin-bottom: 29px;
   margin-left: 10px;
 }
 
-.program-title--pro {
+@media (min-width: @tablet) {
+  .program__title--slim {
+    margin-bottom: 24px;
+    margin-left: 0;
+  }
+}
+
+.program__title--pro {
   margin-bottom: 30px;
   margin-left: 39px;
+}
+
+@media (min-width: @tablet) {
+  .program__title--pro {
+    margin-bottom: 26px;
+    margin-left: 2px;
+  }
 }
 
 .program__content {
@@ -49,6 +79,21 @@
   }
 }
 
+@media (min-width: @tablet) {
+  .program__content::after {
+    height: 0;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program__content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-bottom: 39px;
+  }
+}
+
 .program__item {
   background-color: @cards-color;
   padding: 4px 22px 17px 20px;
@@ -64,6 +109,21 @@
     position: absolute;
     top: 23px;
     left: 20px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program__item {
+    padding: 39px 316px 60px 52px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program__item::before {
+    width: 200px;
+    height: 200px;
+    top: 89px;
+    left: 444px;
   }
 }
 
@@ -86,6 +146,22 @@
   }
 }
 
+@media (min-width: @tablet) {
+  .program__item--slim::after {
+    width: 140px;
+    height: 194px;
+    background-image: url("../../img/svg/cat-slim-tablet.svg");
+    top: 79px;
+    left: 476px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program__item--slim {
+    margin-bottom: 29px;
+  }
+}
+
 .program__item--pro {
   position: relative;
   margin-bottom: 0;
@@ -102,5 +178,15 @@
     z-index: 3;
     top: 35px;
     left: 12px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program__item--pro::after {
+    background-image: url("../../img/svg/cat-pro-tablet.svg");
+    width: 268.126px;
+    height: 112.322px;
+    top: 135px;
+    left: 411px;
   }
 }
