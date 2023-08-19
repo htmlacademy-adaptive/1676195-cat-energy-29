@@ -112,13 +112,15 @@
             </div>
           </div>
             <!-- слайдер естественно не сделан, пока толькао "заглушка-->
-
-            <div class="example__slider">
-          <picture>
-            <source media=min-width:@tablet >
-            <img src="img/viewport-tablet.png" alt="кот до и после" width="280" height="256">
-          </picture>
-        </div>
+            <div class="example__slider-wrapper slider">
+              <ul class="slider__block">
+                <li class="slider__item slider__item--before slider__item--state-before"></li>
+                <li class="slider__item slider__item--after"></li>
+              </ul>
+              <button class="slider__button" type="button">
+                <span class="visually-hidden">Кнопка смещения слайдера влево или вправо</span>
+              </button>
+            </div>
           </div>
       </section>
       <section class="cooperation">
@@ -198,6 +200,6 @@
         </a>
       </div>
     </footer>
-
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -5,6 +5,12 @@
   margin: 0;
 }
 
+@media (min-width: @tablet) {
+  .footer {
+    background-color: #f2f2f2;
+  }
+}
+
 .footer__wrapper {
   display: block;
   margin: 0;
@@ -61,8 +67,23 @@
   }
 }
 
+@media (min-width: @tablet) {
+  .footer__map-block::before {
+    width: 113px;
+    height: 108px;
+    left: 43.5%;
+    top: 36.2%;
+  }
+}
+
 .footer__map-block iframe {
   border: none;
   display: block;
   width: 100%;
+}
+
+@media (min-width: @tablet) {
+  .footer__map-block iframe {
+  min-height: 400px;
+  }
 }
