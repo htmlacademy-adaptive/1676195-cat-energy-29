@@ -1,0 +1,45 @@
+.button {
+  color: #ffffff;
+  background-color: @promo-color;
+  font-family: @Title-font;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.button__promo {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 10px 8px;
+  font-size: 14px;
+  line-height: 18px;
+  position: relative;
+  top: 137px;
+  min-height: 40px;
+}
+
+@media (min-width: @tablet) {
+  .button__promo {
+    width: 244px;
+    top: 0;
+    left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 18px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button__promo {
+    width: 244px;
+    top: 2px;
+    left: 170px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 18px;
+    z-index: 9;
+  }
+}

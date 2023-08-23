@@ -1,0 +1,262 @@
+.example {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: @tablet) {
+  .example {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example {
+    padding: 0;
+    background: linear-gradient(#ffffff 27.6%, #eaeaea 25%, #eaeaea 31%);
+  }
+}
+
+.example__wrapper {
+  background-color: @examle-color;
+  padding: 23px 3px 40px 19px;
+}
+
+@media (min-width: @tablet) {
+  .example__wrapper {
+    background: linear-gradient(#ffffff 58.5%, #eaeaea 56%, #eaeaea 61%);
+    padding: 83px 20px 40px 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__wrapper {
+    display: flex;
+    background: transparent;
+    padding: 67px 110px;
+    gap: 229px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .example__slider-wrapper {
+    background: linear-gradient(#ffffff 29%, #eaeaea 28%, #eaeaea 70%);
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__slider-wrapper {
+    background: transparent);
+  }
+}
+
+.example__title {
+  font-family: @Title-font;
+  color: @prime-font;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 41px;
+}
+
+@media (min-width: @tablet) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 61px;
+    margin-left: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__title {
+    margin-bottom: 146px;
+  }
+}
+
+
+@media (min-width: @tablet) {
+  .example__stats {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__stats {
+    display: block;
+  }
+}
+
+
+.example__stats-list {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
+}
+
+@media (min-width: @tablet) {
+  .example__stats-list {
+    grid-template-columns: repeat(2, 162px);
+    gap: 43px;
+  }
+}
+
+.example__stats-item {
+  margin: 6px 0;
+  padding: 13px 0 16px;
+  border: 1px solid @border-color;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 124px;
+  position: relative;
+}
+
+@media (min-width: @tablet) {
+  .example__stats-item {
+    margin: 38px 0;
+    padding: 14px 17px 18px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .example__stats-item {
+    margin: 53px 0;
+  }
+}
+
+.example__fact {
+  font-family: @Title-font;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .example__fact {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+  }
+}
+
+.example__text {
+  color: @grey-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet) {
+  .example__text {
+    color: @grey-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .example__text {
+    width: 433px;
+  }
+}
+
+.example__fact-lable {
+  margin: 0;
+  margin-bottom: -40px;
+  margin-left: 20%;
+  text-align: center;
+  color: #444444;
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 71px;
+  background-color: #eaeaea;
+  padding: 8px 7px;
+}
+
+@media (min-width: @tablet) {
+  .example__fact-lable {
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    min-width: 155px;
+    align-self: end;
+    margin-bottom: -33px;
+    margin-left: -12%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__fact-lable {
+    background-color: transparent;
+  }
+}
+
+.example__fact-align {
+  left: 26px;
+  top: 57px;
+}
+
+@media (min-width: @tablet) {
+  .example__fact-align {
+    left: 1px;
+    top: 57px;
+  }
+}
+
+.example__total {
+  display: block;
+  padding: 29px 48px 19px;
+}
+
+@media (min-width: @tablet) {
+  .example__total {
+    display: grid;
+    padding: 49px 0 41px 168px;
+    gap: 1px;
+    text-align-last: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__total {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 67px;
+  }
+}
+
+.example__total-text {
+  text-align: center;
+  font-family: @Title-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: @prime-font;
+}
+
+@media (min-width: @tablet) {
+  .example__total-text {
+    text-align: right;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__total-text {
+    margin-top: 8px;
+  }
+}

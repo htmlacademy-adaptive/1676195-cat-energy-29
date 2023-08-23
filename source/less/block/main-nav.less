@@ -1,0 +1,47 @@
+.main-nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  right: -264px;
+  top: -22px;
+}
+
+@media (min-width: @tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: none;
+  z-index: 4;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media (min-width: @tablet) {
+  .main-nav__list {
+    display: flex;
+    background-color: transparent;
+    padding-right: 35px;
+    padding-top: 24px;
+    gap: 34px;
+    width: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-nav__list {
+    max-width: 517px;
+    justify-content: space-between;
+    column-gap: 35px;
+    flex-wrap: wrap;
+  }
+}
