@@ -1,0 +1,162 @@
+.slider {
+  width: 280px;
+  height: 256px;
+  position: relative;
+  margin: 0 auto;
+  margin-right: 16px;
+}
+
+@media (min-width: @tablet) {
+  .slider {
+    width: 627px;
+    height: 512px;
+    margin-top: 67px;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider {
+    margin: 0;
+  }
+}
+
+.slider__block {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 280px;
+  height: 256px;
+}
+
+@media (min-width: @tablet) {
+  .slider__block {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 256px;
+
+  &::before {
+    content: "";
+    width: 280px;
+    height: 256px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__item::before {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__item {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.slider__item--before {
+  background: #eaeaea;
+  z-index: 5;
+  width: 50%;
+  transition: all 2s;
+  overflow: hidden;
+  border-right: 4px solid #666666;
+
+  &::before {
+    background-image: url("../img/slider/before-m.png");
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__item--before {
+    width: 45%;
+    background: linear-gradient(#ffffff 29%, #eaeaea 28%, #eaeaea 70%);
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider__item--before {
+    width: 45%;
+    background: linear-gradient(#ffffff 26%, #eaeaea 10%, #eaeaea 63%);
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__item--before::before {
+    background-image: url("../img/slider/before-t.png");
+  }
+}
+
+.slider--state-before .slider__item--before {
+  width: 100%;
+}
+
+.slider--state-after .slider__item--before {
+  width: 0;
+}
+
+.slider__item--after {
+  z-index: 1;
+
+  &::before {
+    background-image: url("../img/slider/after-m.png");
+  }
+}
+
+@media (min-width: @tablet) {
+  .slider__item--after::before {
+    background-image: url("../img/slider/after-t.png");
+  }
+}
+
+.slider__button {
+  width: 40px;
+  height: 40px;
+  display: block;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  background-image: url("../img/svg/thumb.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  cursor: pointer;
+  transition: all 2s;
+}
+
+.slider--state-before .slider__button {
+  left: 100%;
+}
+
+.slider--state-after .slider__button {
+  left: 0;
+}
+
+@media (min-width: @tablet) {
+  .slider__button {
+    left: 45%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slider__button {
+    left: 45%;
+  }
+}
