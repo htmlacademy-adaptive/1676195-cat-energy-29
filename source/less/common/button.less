@@ -18,11 +18,25 @@
   position: relative;
   top: 137px;
   min-height: 40px;
+}
 
-  @media (min-width: @tablet) {
+@media (min-width: @tablet) {
+  .button__promo {
     width: 244px;
     top: 0;
     left: 100px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 18px 18px;
+    z-index: 9;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button__promo {
+    width: 244px;
+    top: 2px;
+    left: 170px;
     font-size: 20px;
     line-height: 20px;
     padding: 18px 18px;

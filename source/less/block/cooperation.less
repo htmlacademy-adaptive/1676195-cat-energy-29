@@ -1,20 +1,37 @@
 .cooperation {
   margin: 0;
-  padding-top: 18px;
+  padding-top: 0;
   padding-left: 10px;
 }
 
+@media (min-width: @desktop) {
+  .cooperation {
+    position: relative;
+  }
+}
+
 .cooperation__wrapper {
-  padding: 45px 10px;
+  padding: 27px 10px 22px 9px;
   display: flex;
   justify-content: space-around;
 }
 
 @media (min-width: @tablet) {
   .cooperation__wrapper {
-    padding: 44px 70px 45px 59px;
+    padding: 62px 70px 44px 59px;
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop) {
+  .cooperation__wrapper {
+    position: absolute;
+    background-color: #ffffff;
+    z-index: 12;
+    top: 100px;
+    left: 109px;
+    padding: 65px 77px 46px 80px;
   }
 }
 
@@ -28,6 +45,14 @@
   .cooperation__wrapper-contact {
     width: 200px;
     text-align: right;
+  }
+}
+
+@media (min-width: @desktop) {
+  .cooperation__wrapper-contact {
+    text-align: left;
+    padding-left: 58px;
+    width: 220px;
   }
 }
 
@@ -73,8 +98,12 @@
   }
 }
 
-@media (min-width: @tablet) {
 .cooperation__contact--city {
-  line-height: 55px;
+  line-height: 26px;
+}
+
+@media (min-width: @tablet) {
+  .cooperation__contact--city {
+    line-height: 55px;
   }
 }

@@ -7,25 +7,47 @@
 
 @media (min-width: @tablet) {
   .example {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example {
     padding: 0;
+    background: linear-gradient(#ffffff 27.6%, #eaeaea 25%, #eaeaea 31%);
   }
 }
 
 .example__wrapper {
   background-color: @examle-color;
-  padding: 23px 3px 36px 19px;
+  padding: 23px 3px 40px 19px;
 }
 
 @media (min-width: @tablet) {
   .example__wrapper {
-    background: linear-gradient(#ffffff 57%, #eaeaea 55%, #eaeaea 69%);
-    padding: 44px 20px 40px 30px;
+    background: linear-gradient(#ffffff 58.5%, #eaeaea 56%, #eaeaea 61%);
+    padding: 83px 20px 40px 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__wrapper {
+    display: flex;
+    background: transparent;
+    padding: 67px 110px;
+    gap: 229px;
   }
 }
 
 @media (min-width: @tablet) {
   .example__slider-wrapper {
     background: linear-gradient(#ffffff 29%, #eaeaea 28%, #eaeaea 70%);
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__slider-wrapper {
+    background: transparent);
   }
 }
 
@@ -49,11 +71,25 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .example__title {
+    margin-bottom: 146px;
+  }
+}
+
+
 @media (min-width: @tablet) {
   .example__stats {
     display: flex;
   }
 }
+
+@media (min-width: @desktop) {
+  .example__stats {
+    display: block;
+  }
+}
+
 
 .example__stats-list {
   display: grid;
@@ -82,6 +118,12 @@
   .example__stats-item {
     margin: 38px 0;
     padding: 14px 17px 18px;
+  }
+}
+
+@media (min-width: @tablet) {
+  .example__stats-item {
+    margin: 53px 0;
   }
 }
 
@@ -121,9 +163,15 @@
   }
 }
 
+@media (min-width: @tablet) {
+  .example__text {
+    width: 433px;
+  }
+}
+
 .example__fact-lable {
   margin: 0;
-  margin-bottom: -37px;
+  margin-bottom: -40px;
   margin-left: 20%;
   text-align: center;
   color: #444444;
@@ -133,7 +181,7 @@
   font-weight: 400;
   max-width: 71px;
   background-color: #eaeaea;
-  padding: 7px 6px;
+  padding: 8px 7px;
 }
 
 @media (min-width: @tablet) {
@@ -145,6 +193,12 @@
     align-self: end;
     margin-bottom: -33px;
     margin-left: -12%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__fact-lable {
+    background-color: transparent;
   }
 }
 
@@ -174,6 +228,15 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .example__total {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 67px;
+  }
+}
+
 .example__total-text {
   text-align: center;
   font-family: @Title-font;
@@ -189,5 +252,11 @@
   .example__total-text {
     text-align: right;
     font-size: 20px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .example__total-text {
+    margin-top: 8px;
   }
 }

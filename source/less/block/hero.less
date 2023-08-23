@@ -9,6 +9,12 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .hero--margin-tablet {
+    margin-bottom: 110px;
+  }
+}
+
 .hero__container {
   position: relative;
   padding: 0 0 96px;
@@ -33,11 +39,11 @@
     top: 0;
     left: 0;
     display: block;
-    background-image: url("../../img/cat-background.jpg");
+    background-image: url("../img/cat-background.jpg");
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center center;
-    background-color: @promo-color;
+    background-color: #63a63c;
     width: 100%;
     height: 100%;
 
@@ -47,9 +53,11 @@
     }
 
     @media (min-width: @desktop) {
-      background-image: url("../../img/cat-background-desk.jpg");
+      background-image: url("../img/cat-background-desk.jpg");
       background-color: #64a73d;
-      top: -144px;
+      background-position: right;
+      min-height: 697px;
+      top: -150px;
       width: 50%;
       transform: translateX(100%);
     }
@@ -69,11 +77,6 @@
   }
 }
 
-@media (min-width: @desktop) {
-  .hero__wrapper {
-    height: 697px;
-  }
-}
 
 /* еда суперкотов*/
 .hero__container::after {
@@ -81,7 +84,7 @@
   display: block;
   width: 100%;
   height: 270px;
-  background-image: url("../../img/hero-food.png");
+  background-image: url("../img/hero-food.png");
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
@@ -91,7 +94,7 @@
 
   @media (min-width: @tablet) {
     min-height: 609px;
-    background-image: url("../../img/hero-tablet.png");
+    background-image: url("../img/hero-tablet.png");
     background-color: transparent;
     left: 0%;
     transform: translateY(432px);
@@ -99,10 +102,10 @@
 
   @media (min-width: @desktop) {
     min-height: 609px;
-    background-image: url("../../img/hero-food-desktop.png");
+    background-image: url("../img/hero-food-desktop.png");
     background-color: transparent;
     left: 112px;
-    transform: translateY(-297px);
+    transform: translateY(96px);
     z-index: 1;
   }
 }
@@ -135,9 +138,9 @@
 
 @media (min-width: @desktop) {
   .hero__title {
-    margin: 14px auto 40px;
+    margin: 65px auto 40px;
     padding-right: 684px;
-    padding-left: 190px;
+    padding-left: 189px;
   }
 }
 
@@ -162,6 +165,14 @@
     line-height: 20px;
     text-align: left;
     padding-left: 120px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .hero__slogan {
+    padding-left: 190px;
+    width: 500px;
+    line-height: 20px;
   }
 }
 
