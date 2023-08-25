@@ -37,42 +37,213 @@
         </nav>
       </header>
   <main class="main-container">
-    <h1 class="visually-hidden">Каталог продукции, тчобы ваш котик был здоровым и активным</h1>
+    <h1 class="visually-hidden">Каталог продукции, чтобы ваш котик был здоровым и активным</h1>
     <section class="catalog">
       <h2 class="catalog__title">Каталог продукции</h2>
       <div class="catalog__wrapper">
         <ul class="catalog__list">
-          <!--пока только одна карточка, не могу понять, делать отдельным элементом кадое слово, или можно только строчку-->
-          <li class="catalog__item">
-            <picture>
-              <img src="img/catalog/chiken-mobile.png" width="68" height="86" alt="корм со вкусом курицы 500 грамм">
-            </picture>
-            <div class="catalog__item-description">
-              <h3 class="catalog__item-title">Cat Energy PRO 500 г</h3>
-              <div class="catalog__item-point">
-                <span class="catalog__item-point-description">Масса</span>
-                <span class="catalog__item-point-value">500г</span>
-              </div>
-              <div class="catalog__item-point">
-                <span class="catalog__item-point-description">Вкус</span>
-                <span class="catalog__item-point-value">Курица</span>
-              </div>
-              <div class="catalog__item-point">
-                <span class="catalog__item-point-description">Цена</span>
-                <span class="catalog__item-point-value">700р</span>
-              </div>
-            </div>
-            <a href="#" class="catalog__item-button">заказать</a>
-          </li>
-          <li class="catalog__more-item">
-            <a class="catalog__more-link" href="#">
+          <li class="catalog__item cards">
+            <a class="cards__link cards__link--image" href="#">
               <picture>
-                <img class="catalog__more-button" src="img/catalog/plus.png" height="30" width="30" alt="нажмите чтобы увдеть больше вкусов">
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-1-small-desktop@2x.png 2x", type="image/png", width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-small-tablet@1x.png 1x, img/catalog/catalog-image-1-small-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-1-small-mobile@2x.jpg 2x" width="68" height="86"
+                alt="Кэт Энерджи ПРО со вкусом курицы 500 г.">
               </picture>
             </a>
-            <h3 class="catalog__more-title">Показать еще 100500 товаров</h3>
-            <span class="catalog__more-item-text">На самом деле вкусов <br class="catalog__more-item-br">гораздо больше!</span>
-            <a href="#" class="catalog__more-item-button">показать все</a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy PRO 500 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">500 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Курица</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">700 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards cards-big">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-1-big-desktop@2x.png 2x", type="image/png", width="172" height="196">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-big-tablet@1x.png 1x, img/catalog/catalog-image-1-big-tablet@2x.png 2x", type="image/png", width="168" height="206">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-1-big-mobile@2x.jpg 2x" width="84" height="100"
+                alt="Кэт Энерджи ПРО со вкусом курицы 1000 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy PRO 1000 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">1000 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Курица</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">1000 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/catalog-image-2-small-tablet@1x.png 1x, img/catalog/catalog-image-2-small-desktop@2x.png 2x", type="image/png", width="161" height="172">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-small-tablet@1x.png 1x, img/catalog/catalog-image-2-small-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-2-small-mobile@2x.jpg 2x" width="68" height="86"
+                alt="Кэт Энерджи ПРО со вкусом рыбы 500 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy PRO 500 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">500 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Рыба</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">700 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards cards-big">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-2-big-desktop@2x.png 2x", type="image/png", width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-big-tablet@1x.png 1x, img/catalog/catalog-image-2-big-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-2-big-mobile@2x.jpg 2x" width="68" height="86"
+                alt="Кэт Энерджи ПРО со вкусом рыбы 1000 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy PRO 1000 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">1000 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Рыба</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">1000 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-3-small-desktop@2x.png 2x", type="image/png", width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-small-tablet@1x.png 1x, img/catalog/catalog-image-3-small-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-3-small-mobile@2x.jpg 2x" width="68" height="78"
+                alt="Кэт Энерджи Слим со вкусом гречки 500 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy Slim 500 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">500 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Гречка</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">400 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards cards-big">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-3-big-desktop@2x.png 2x", type="image/png", width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-big-tablet@1x.png 1x, img/catalog/catalog-image-3-big-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-3-big-mobile@2x.jpg 2x" width="84" height="100"
+                alt="Кэт Энерджи Слим со вкусом кречки 1000 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy Slim 1000 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">1000 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Гречка</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">700 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item cards">
+            <a class="cards__link cards__link--image" href="#">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/catalog/c1 1x, img/catalog/catalog-image-4-small-desktop@2x.png 2x", type="image/png", width="169" height="210">
+                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-4-small-tablet@1x.png 1x, img/catalog/catalog-image-4-small-tablet@2x.png 2x", type="image/png", width="161" height="172">
+                <img class="cards__image" src="img/catalog/" srcset="img/catalog/catalog-image-4-small-mobile@2x.jpg 2x" width="68" height="86"
+                alt="Кэт Энерджи Слим со вкусом риса 500 г.">
+              </picture>
+            </a>
+            <div class="cards__table-container cards-item">
+              <a class="cards__link cards__link--header" href="#">
+                <h3 class="cards__header">Cat Energy Slim 500 г</h3>
+              </a>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Масса</dt>
+                <dd class="cards-item__value">500 г</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Вкус</dt>
+                <dd class="cards-item__value">Рис</dd>
+              </dl>
+              <dl class="cards-item__table">
+                <dt class="cards-item__description">Цена</dt>
+                <dd class="cards-item__value">700 ₽</dd>
+              </dl>
+            </div>
+            <a class="cards__button button button--order" href="#">Заказать</a>
+          </li>
+          <li class="catalog__item-more cards-more">
+            <a class="cards__link cards__link--image" href="#">
+            <h3 class="cards__header cards__header--more">Показать еще 100500 товаров</h3>
+            </a>
+            <p class="cards-more_text">На самом деле вкусов гораздо больше!</p>
+            <a href="#" class="cards__button cards__button-more button button--more">показать все</a>
           </li>
         </ul>
       </div>
