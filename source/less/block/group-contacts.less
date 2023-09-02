@@ -1,6 +1,6 @@
 .group-contacts {
   padding: 0;
-  margin: 26px 10px 9px 0;
+  margin: 26px 10px 7px 0;
 }
 
 .group-contacts__input {
@@ -22,18 +22,33 @@
   padding-left: 20px;
 }
 
-.group-contacts__legend-title {
+@media (min-width: @tablet) {
+  .group-contacts__legend {
+    padding-bottom: 3px;
+    min-width: 187px;
+    padding-left: 70px;
+  }
+}
+
+.group-contacts__title {
+  display: inline-block;
+  position: relative;
   font-family: @Title-font;
   font-size: 24px;
   line-height: 26px;
-  position: relative;
+  background-color: #ffffff;
+  z-index: 6;
+  max-width: 227px;
+  padding: 0 20px;
 }
 
-.group-contacts__legend-title::after {
-  border-bottom: 1px solid @promo-color;
-  top: 0;
-  left: 0;
+@media (min-width: @tablet) {
+  .group-contacts__legend-title {
+    font-size: 36px;
+    line-height: 36px; 
+  }
 }
+
 
 .group-contacts__list {
   padding: 19px 20px;

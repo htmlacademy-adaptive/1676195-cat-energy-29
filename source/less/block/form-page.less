@@ -4,18 +4,37 @@
   border-top: 1px solid #d9d9d9;
 }
 
+@media (min-width: @tablet) {
+  .form-page {
+    border-top: none;
+  }
+}
+
 .form-page__content-wrapper {
   margin: 0;
   padding: 26px 0 0 20px;
 }
 
+@media (min-width: @tablet) {
+  .form-page__content-wrapper {
+    padding: 24px 0 31px 71px;
+  }
+}
+
 .form-page__title {
   padding-bottom: 37px;
-  margin: 0;
   font-family: @Title-font;
+  margin: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+}
+
+@media (min-width: @tablet) {
+  .form-page__title {
+    padding: 15px 33px 66px 0;
+    font-size: 60px;
+  }
 }
 
 .form-page__text {
@@ -29,10 +48,15 @@
 }
 
 @media (min-width: @tablet) {
-  .form-page__title {
-    padding: 0 30px 54px 70px;
+  .form-page__text {
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    width: 323px;
   }
+}
 
+@media (min-width: @tablet) {
   .form-page__inner-text {
     padding: 0 30px 0 70px;
     font-size: 20px;

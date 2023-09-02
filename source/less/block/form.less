@@ -30,10 +30,24 @@
   margin-bottom: 14px;
 }
 
+@media (min-width: @tablet) {
+  .form__item {
+    font-size: 20px;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+}
+
 .form__lable {
   padding: 0;
   margin: 0;
   margin-right: 10px;
+}
+
+@media (min-width: @tablet) {
+  .form__lable {
+    margin-right: 9px;
+  }
 }
 
 .form__lable-input {
@@ -48,16 +62,43 @@
   padding: 0 19px 0 13px;
 }
 
+@media (min-width: @tablet) {
+  .form__lable-input {
+    font-size: 20px;
+    min-height: 52px;
+    padding: 0px 25px 0px 19px;
+    border: 1px solid #e7e7e7;
+  }
+}
+
 .form__lable-input--name {
   min-width: 228px;
+}
+
+@media (min-width: @tablet) {
+  .form__lable-input--name {
+  width: 570px;
+  }
 }
 
 .form__lable-input--weight {
   min-width: 208px;
 }
 
+@media (min-width: @tablet) {
+.form__lable-input--weight {
+  width: 542px;
+  }
+}
+
 .form__lable-input--age {
   width: 174px;
+}
+
+@media (min-width: @tablet) {
+  .form__lable-input--age {
+  width: 500px;
+  }
 }
 
 .form__button-container {
@@ -81,11 +122,6 @@
 }
 
 @media (min-width: @tablet) {
-  .form__item {
-    font-size: 20px;
-    line-height: normal;
-  }
-
   .form__button-container {
     display: flex;
     align-items: baseline;
