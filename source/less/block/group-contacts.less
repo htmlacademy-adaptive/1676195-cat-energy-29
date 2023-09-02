@@ -15,6 +15,13 @@
   padding: 2px 18px 0 13px;
 }
 
+@media (min-width: @tablet) {
+  .group-contacts__input {
+    min-height: 52px;
+    padding: 0 20px 0 17px;
+  }
+}
+
 .group-contacts__legend {
   padding-right: 95px;
   padding-bottom: 14px;
@@ -31,24 +38,18 @@
 }
 
 .group-contacts__title {
-  display: inline-block;
-  position: relative;
-  font-family: @Title-font;
-  font-size: 24px;
-  line-height: 26px;
-  background-color: #ffffff;
-  z-index: 6;
   max-width: 227px;
   padding: 0 20px;
 }
 
 @media (min-width: @tablet) {
-  .group-contacts__legend-title {
+  .group-contacts__title {
     font-size: 36px;
-    line-height: 36px; 
+    line-height: 36px;
+    max-width: 768px;
+    margin-left: 29px;
   }
 }
-
 
 .group-contacts__list {
   padding: 19px 20px;
@@ -59,6 +60,12 @@
   position: relative;
 }
 
+@media (min-width: @tablet) {
+  .group-contacts__item {
+    margin-bottom: 19px;
+  }
+}
+
 .group-contacts__item:last-child {
   margin-bottom: 0;
 }
@@ -67,8 +74,22 @@
   width: 217px;
 }
 
+@media (min-width: @tablet) {
+  .group-contacts__input-mail {
+    width: 554px;
+    margin-left: 10px;
+  }
+}
+
 .group-contacts__input-phone {
   width: 200px;
+}
+
+@media (min-width: @tablet) {
+  .group-contacts__input-phone {
+    width: 532px;
+    margin-left: 11px;
+  }
 }
 
 .group-contacts__icon {
@@ -94,10 +115,6 @@
 
   .group-contacts__list {
     padding: 76px 70px 65px 70px;
-  }
-
-  .group-contacts__title {
-    padding-bottom: 0;
   }
 }
 
