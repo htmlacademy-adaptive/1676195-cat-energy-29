@@ -1,7 +1,7 @@
 .main {
   position: relative;
   padding: 42px 11px 0;
-  background: url("../../img/textlogo.svg");
+  background: url("../img/textlogo.svg");
   background-repeat: no-repeat;
   background-position: center 22px;
 }
@@ -9,7 +9,7 @@
 @media (min-width: @tablet) {
   .main {
     padding: 0 31px 112px 23px;
-    background-position: 102px 41px;
+    background: none;
   }
 }
 
@@ -18,7 +18,7 @@
     width: 1440px;
     margin: 0 auto;
     padding: 35px 0 112px 0;
-    background: url("../../img/svg/textlogo-desktop.svg");
+    background: none;
     background-repeat: no-repeat;
     background-position: 194px 74px;
   }
@@ -35,6 +35,18 @@
     top: 26px;
     left: 30px;
   }
+}
+
+.main__logo-image:hover {
+  opacity: 0.8;
+}
+
+.main__logo-image:focus {
+  opacity: 0.6;
+}
+
+.main__logo-image:active {
+  opacity: 0.6;
 }
 
 @media (min-width: @desktop) {
