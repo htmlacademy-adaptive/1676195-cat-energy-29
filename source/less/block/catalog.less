@@ -1,0 +1,34 @@
+.catalog {
+  margin: 0 0 70px 0;
+  padding: 0 20px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (min-width: @tablet) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    align-items: end;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+    padding: 0 40px;
+  }
+}
+
+.catalog__title {
+  font-family: @Title-font;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+}

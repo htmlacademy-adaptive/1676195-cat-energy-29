@@ -1,12 +1,127 @@
 .group-program {
+<<<<<<< HEAD
   padding: 20px 20px 18px;
   border-bottom: 1px solid #d7d7d7;
 }
 
 .group-program__item {
   margin-bottom: 11px;
+=======
+  padding: 22px 20px 20px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: @tablet) {
+  .group-program {
+    padding: 0 69px 73px 70px;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .group-program {
+    width: 610px;
+    padding: 0 40px 0 0;
+  }
+}
+
+.group-program__list {
+  margin: 0;
+  padding: 6px 0 4px 0;
+}
+
+@media (min-width: @tablet) {
+  .group-program__list {
+    padding: 35px 27px 35px 27px;
+    border: 1px solid #e7e7e7;
+  }
+}
+
+@media (min-width: @desktop) {
+  .group-program__list {
+    padding: 33px 28px;
+  }
+}
+
+.group-program__item {
+  font-family: @Title-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+@media (min-width: @tablet) {
+  .group-program__item {
+    font-size: 20px;
+    margin-bottom: 36px;
+  }
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
 }
 
 .group-program__item:last-child {
   margin-bottom: 0;
 }
+<<<<<<< HEAD
+=======
+
+.group-program__checkbox-label {
+  position: relative;
+  padding-left: 45px;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet) {
+  .group-program__checkbox-label {
+    padding-left: 60px;
+  }
+}
+
+.group-program__checkbox-label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  left: 0;
+  top: -2px;
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: @tablet) {
+  .group-program__checkbox-label::before {
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: -5px;
+  }
+}
+
+.group-program__checkbox-label::after {
+  position: absolute;
+  content: "";
+  display: none;
+  width: 14px;
+  height: 14px;
+  background-color: @promo-color;
+  border-radius: 50%;
+  left: 8px;
+  top: 6px;
+}
+
+@media (min-width: @tablet) {
+  .group-program__checkbox-label::after {
+    width: 18px;
+    height: 18px;
+    left: 11px;
+    top: 6px;
+  }
+}
+
+.group-program__input:checked + .group-program__checkbox-label::after {
+  display: block;
+}
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c

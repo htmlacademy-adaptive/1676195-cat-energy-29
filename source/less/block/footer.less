@@ -26,6 +26,17 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+@media (min-width: @desktop) {
+  .footer__wrapper {
+    width: @desktop;
+    margin: 0 auto;
+    padding: 81px 111px;
+  }
+}
+
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
 .footer__social-list {
   display: flex;
 }
@@ -54,7 +65,11 @@
 @media (min-width: @tablet) {
   .footer__academy-wrapper {
     align-items: normal;
+<<<<<<< HEAD
     padding: 0;
+=======
+    padding: 1px 3px 0 0;
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
   }
 }
 
@@ -66,6 +81,7 @@
     content: "";
     position: absolute;
     display: block;
+<<<<<<< HEAD
     background-image: url("../../img/map-pin.png");
     background-color: transparent;
     background-repeat: no-repeat;
@@ -74,11 +90,26 @@
     height: 59px;
     left: 42%;
     top: 38%;
+=======
+    background-image: url("../img/map-pin.png");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 57px;
+    height: 53px;
+    left: 42%;
+    top: 38%;
+    z-index: 1;
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
   }
 
   &::after {
     position: relative;
+<<<<<<< HEAD
     background-image: url("../../img/map-mobile.jpg");
+=======
+    background-image: url("../img/map-mobile.jpg");
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
     background-size: contain;
   }
 }
@@ -92,6 +123,7 @@
   }
 }
 
+<<<<<<< HEAD
 .footer__map-block iframe {
   border: none;
   display: block;
@@ -103,3 +135,71 @@
     min-height: 400px;
   }
 }
+=======
+@media (min-width: @desktop) {
+  .footer__map-block::before {
+    left: 63.2%;
+    top: 34.2%;
+  }
+}
+
+.footer__map-yandex {
+  border: none;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: @tablet) {
+  .footer__map-yandex {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .footer__map-yandex {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.footer__social-icon {
+  fill: #666666;
+  cursor: pointer;
+}
+
+.footer__social-icon:hover {
+  fill: @promo-color;
+}
+
+.footer__social-icon:focus {
+  fill: @promo-color;
+}
+
+.footer__social-icon:active {
+  fill: @promo-color;
+  opacity: 0.6;
+}
+
+.footer__logo:focus {
+  fill: #3e3e3e;
+}
+
+.footer__logo {
+  fill: #111111;
+}
+
+.footer__logo:hover {
+  fill: #3e3e3e;
+}
+
+@media (min-width: @tablet) {
+  .footer__academy-lable {
+    box-sizing: border-box;
+    position: relative;
+    top: -7px;
+    left: 8px;
+  }
+}
+>>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
