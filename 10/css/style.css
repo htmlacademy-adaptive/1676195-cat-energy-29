@@ -2174,6 +2174,12 @@ a {
     top: 8px;
   }
 }
+@media (min-width: 1440px) {
+  .group-additional__checkbox-label::after {
+    left: 10px;
+    top: 4px;
+  }
+}
 .group-additional__input:checked + .group-additional__checkbox-label::after {
   display: block;
 }
@@ -2257,6 +2263,8 @@ a {
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
   resize: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
 }
 @media (min-width: 768px) {
   .group-comments__textarea {
