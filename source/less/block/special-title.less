@@ -1,6 +1,6 @@
 .special-title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   padding: 0;
   color: #000000;
   font-size: 24px;
@@ -24,11 +24,17 @@
   left: 0;
   z-index: 1;
   height: 1px;
-  border-top: 2px solid #68b738;
+  border-top: 2px solid @promo-color;
 }
 
 @media (min-width: @tablet) {
   .special-title::before {
     top: 23px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .special-title::before {
+    top: 25px;
   }
 }

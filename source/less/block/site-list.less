@@ -14,7 +14,20 @@
   }
 }
 
-.site-list__link-forum,
+@media (min-width: @tablet) {
+  .site-list--margin-form {
+    margin-right: -5px;
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .site-list--margin-form {
+    margin-right: 75px;
+    margin-top: 14px;
+  }
+}
+
 .site-list__link {
   display: block;
   font-size: 20px;
@@ -43,6 +56,12 @@
     padding: 0;
     padding-bottom: 9px;
     color: #ffffff;
+  }
+}
+
+@media (min-width: @desktop) {
+  .site-list__link--dark {
+    color: @prime-font;
   }
 }
 
