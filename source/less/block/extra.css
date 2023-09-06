@@ -1,0 +1,16 @@
+.extra {
+  padding: 0 20px;
+  margin: 0;
+}
+.extra__legend {
+  margin: 0;
+  padding: 0;
+}
+.extra__title {
+  padding: 1 3px 27px 0;
+}
+.extra__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
