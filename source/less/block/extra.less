@@ -9,13 +9,26 @@
 }
 
 .extra__title {
-  padding: 1px 22px 31px 19px;
+  padding: 1px 22px 33px 19px;
 }
 
 .extra__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.extra__item {
+  margin: 0;
+  padding: 0 0 19px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra__item-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap; 
 }
 
 .extra__item-title {
@@ -25,7 +38,7 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
-  padding-top: 16px;
+  padding-top: 12px;
   padding-bottom: 7px;
 }
 
@@ -34,8 +47,10 @@
 }
 
 .extra__button {
-  width: 280px;
+  min-width: 280px;
   height: 40px;
   border: none;
   font-size: 16px;
+  display: flex;
+  box-sizing: border-box;
 }
