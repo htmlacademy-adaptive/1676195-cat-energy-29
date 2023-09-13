@@ -19,7 +19,7 @@
 .main-nav__list {
   display: none;
   z-index: 4;
-  position: absolute;
+  position: relative;
   background-color: #ffffff;
   padding: 0;
   right: 0;
@@ -29,11 +29,13 @@
 @media (min-width: @tablet) {
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     background-color: transparent;
     padding-right: 35px;
     padding-top: 24px;
     gap: 34px;
     width: auto;
+    left: 274px;
   }
 }
 
@@ -42,7 +44,7 @@
     max-width: 517px;
     justify-content: space-between;
     column-gap: 35px;
-    flex-wrap: wrap;
+    left: 849px;
   }
 }
 
