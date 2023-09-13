@@ -3,19 +3,53 @@
   margin: 0;
 }
 
+@media (min-width: @tablet) {
+  .extra {
+  padding: 23px 0 0;
+  }
+}
+
 .extra__legend {
   margin: 0;
   padding: 0;
 }
 
+
+@media (min-width: @tablet) {
+  .extra__legend {
+    padding: 0 33px;
+  }
+}
+
+
 .extra__title {
   padding: 1px 22px 33px 19px;
+}
+
+@media (min-width: @tablet) {
+  .extra__title {
+  padding: 15px 41px 33px 38px;
+  }
 }
 
 .extra__list {
   margin: 0 auto;
   padding: 0 20px;
   list-style: none;
+}
+
+@media (min-width: @tablet) {
+  .extra__list {
+    border: 1px solid #cdcdcd;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__list {
+    border: unset;
+    padding: 0;
+  }
 }
 
 .extra__item {
@@ -30,12 +64,46 @@
   padding: 0 0 17px;
 }
 
+
+@media (min-width: @tablet) {
+  .extra__item {
+    flex-direction: row;
+    padding: 12px 37px 28px;
+    justify-content: space-between;
+    gap: 5px 195px;
+  }
+  
+ &:last-child {
+  border-bottom:unset;
+ }
+}
+
+
+@media (min-width: @desktop) {
+  .extra__item {
+    gap: 0 94px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__item:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 .extra__item-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .extra__item-wrapper {
+    align-self: center;
+    gap: 0 52px;
+  }
 }
 
 .extra__item-title {
@@ -48,6 +116,14 @@
   line-height: 20px;
   margin: 0;
   padding: 12px 0 0;
+}
+
+@media (min-width: @tablet) {
+  .extra__item-title {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 14px 0 18px;
+  }
 }
 
 .extra__item-description {
@@ -67,9 +143,33 @@
   }
 }
 
+@media (min-width: @tablet) {
+  .extra__item-description {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .extra__wrapper {
   padding: 0;
 }
+
+@media (min-width: @tablet) {
+  .extra__wrapper {
+    padding: 50px 31px 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__wrapper {
+    padding: 27px 110px;
+    display: flex;
+  }
+}
+
+
 
 .extra__button {
   min-width: 280px;
@@ -77,4 +177,17 @@
   box-sizing: border-box;
   padding: 8px 20px;
   grid-column: 1/-1;
+}
+
+@media (min-width: @tablet) {
+  .extra__button {
+  display: block;
+  min-width: 100%;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__button {
+    min-width: 244px;
+  }
 }

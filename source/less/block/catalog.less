@@ -4,6 +4,19 @@
   border-top: 1px solid #ebebeb;
 }
 
+@media (min-width: @tablet) {
+  .catalog {
+  border-top: unset;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog {
+  margin: 0 auto;
+  width: 1440px;
+  }
+}
+
 .catalog__list {
   margin: 0;
   padding: 0;
@@ -24,7 +37,7 @@
 
 @media (min-width: @desktop) {
   .catalog__list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 245px);
     gap: 117px 80px;
     padding: 0 40px;
   }
