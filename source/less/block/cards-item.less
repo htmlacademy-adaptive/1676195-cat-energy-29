@@ -5,9 +5,42 @@
   justify-content: space-between;
 }
 
-.cards-item__description,
-.cards-item__value {
+@media (min-width: @tablet) {
+  .cards-item__table {
+    border-bottom: 1px solid #cdcdcd;
+    justify-content: space-between;
+    margin-bottom: -11px;
+    padding: 17px 0 2px 0px;
+  }
+}
+
+.cards-item__description {
   font-size: 12px;
+  font-family: @content-font;
+  font-weight: 400;
   line-height: 16px;
   color: #444444;
+}
+
+@media (min-width: @tablet) {
+  .cards-item__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.cards-item__value {
+  font-size: 12px;
+  font-family: @content-font;
+  font-weight: 400;
+  line-height: 16px;
+  color: #444444;
+  padding-right: 1px;
+}
+
+@media (min-width: @tablet) {
+  .cards-item__value {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

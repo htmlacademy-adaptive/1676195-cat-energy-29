@@ -9,6 +9,15 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .group-comments {
+    grid-column: 1/-1;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+
 .group-comments__legend {
   padding-right: 95px;
   padding-bottom: 14px;
@@ -76,6 +85,8 @@
 @media (min-width: @desktop) {
   .group-comments__textarea-container {
     padding: 75px 79px 15px 111px;
+    width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -103,12 +114,5 @@
     min-width: 1220px;
     padding: 9px 40px 8px 19px;
     margin: 0 auto;
-  }
-}
-
-
-@media (min-width: @desktop) {
-  .group-comments {
-    grid-column: 1/-1;
   }
 }
