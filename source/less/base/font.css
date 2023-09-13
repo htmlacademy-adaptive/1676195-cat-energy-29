@@ -9,7 +9,7 @@
 @font-face {
   font-family: "Oswald";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
   src: url("../fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
