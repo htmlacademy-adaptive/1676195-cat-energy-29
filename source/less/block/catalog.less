@@ -6,7 +6,7 @@
 
 @media (min-width: @tablet) {
   .catalog {
-  border-top: unset;
+    border-top: unset;
   }
 }
 
@@ -28,10 +28,11 @@
 @media (min-width: @tablet) {
   .catalog__list {
     display: grid;
-    grid-template-columns: repeat(2, 324px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px 60px;
     border: none;
     padding: 0 30px;
+    margin: 0 auto;
   }
 }
 
@@ -60,6 +61,11 @@
   }
 }
 
+@media (min-width: @desktop) {
+  .catalog__title {
+    margin: 45px 31px 116px 110px; 
+  }
+}
 // .catalog__item {
 //   margin: 0;
 //   padding: 16px 20px 24px;
