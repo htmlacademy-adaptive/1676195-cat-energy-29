@@ -6,7 +6,7 @@
 
 .main-nav__toggle {
   position: absolute;
-  right: -264px;
+  right: -270px;
   top: -22px;
 }
 
@@ -17,13 +17,20 @@
 }
 
 .main-nav__list {
-  display: none;
   z-index: 4;
   position: relative;
   background-color: #ffffff;
   padding: 0;
-  right: 0;
+  right: 12px;
   width: 100%;
+}
+
+.main-nav__list--closed {
+  display: block;
+}
+
+.main-nav__list--opened {
+  display: none;
 }
 
 @media (min-width: @tablet) {
