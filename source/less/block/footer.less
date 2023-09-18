@@ -26,8 +26,6 @@
   }
 }
 
-<<<<<<< HEAD
-=======
 @media (min-width: @desktop) {
   .footer__wrapper {
     width: @desktop;
@@ -36,7 +34,6 @@
   }
 }
 
->>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
 .footer__social-list {
   display: flex;
 }
@@ -54,6 +51,14 @@
   text-align: left;
 }
 
+.footer__conact-academy:hover {
+  color: rgba(68, 68, 68, 0.8);
+}
+
+.footer__conact-academy:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .footer__academy-wrapper {
   display: flex;
   justify-content: space-between;
@@ -65,11 +70,7 @@
 @media (min-width: @tablet) {
   .footer__academy-wrapper {
     align-items: normal;
-<<<<<<< HEAD
-    padding: 0;
-=======
     padding: 1px 3px 0 0;
->>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
   }
 }
 
@@ -81,16 +82,6 @@
     content: "";
     position: absolute;
     display: block;
-<<<<<<< HEAD
-    background-image: url("../../img/map-pin.png");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 70px;
-    height: 59px;
-    left: 42%;
-    top: 38%;
-=======
     background-image: url("../img/map-pin.png");
     background-color: transparent;
     background-repeat: no-repeat;
@@ -100,17 +91,20 @@
     left: 42%;
     top: 38%;
     z-index: 1;
->>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-pin@2x.png");
+    }
   }
 
   &::after {
     position: relative;
-<<<<<<< HEAD
-    background-image: url("../../img/map-mobile.jpg");
-=======
     background-image: url("../img/map-mobile.jpg");
->>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg")  
+    }
   }
 }
 
@@ -123,19 +117,6 @@
   }
 }
 
-<<<<<<< HEAD
-.footer__map-block iframe {
-  border: none;
-  display: block;
-  width: 100%;
-}
-
-@media (min-width: @tablet) {
-  .footer__map-block iframe {
-    min-height: 400px;
-  }
-}
-=======
 @media (min-width: @desktop) {
   .footer__map-block::before {
     left: 63.2%;
@@ -158,7 +139,7 @@
 
 @media (min-width: @desktop) {
   .footer__map-yandex {
-    width: 1440px;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
   }
@@ -180,19 +161,34 @@
 .footer__social-icon:active {
   fill: @promo-color;
   opacity: 0.6;
-}
-
-.footer__logo:focus {
-  fill: #3e3e3e;
+  cursor: pointer;
 }
 
 .footer__logo {
   fill: #111111;
+  cursor: pointer;
 }
 
 .footer__logo:hover {
   fill: #3e3e3e;
 }
+
+.footer__logo:focus {
+  fill: #6b6b6b;
+}
+
+.footer__academy-lable {
+  fill: rgba(102, 102, 102, 1);
+}
+
+.footer__academy-lable:hover {
+  fill: rgba(104, 183, 56, 1);
+}
+
+.footer__academy-lable:active {
+  fill: rgba(104, 183, 56, 1);
+}
+
 
 @media (min-width: @tablet) {
   .footer__academy-lable {
@@ -202,4 +198,3 @@
     left: 8px;
   }
 }
->>>>>>> c35e9a616fe13bc3b112ed543bfe18641ddb9f4c

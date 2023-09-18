@@ -97,6 +97,11 @@
 
 .group-contacts__input-mail {
   min-width: 217px;
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -114,6 +119,11 @@
 
 .group-contacts__input-phone {
   min-width: 200px;
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: @tablet) {

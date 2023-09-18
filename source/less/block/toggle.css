@@ -1,5 +1,4 @@
 .toggle {
-  background-image: url("../img/toggle-gamburger.svg");
   border: none;
   position: relative;
   padding: 0;
@@ -8,4 +7,13 @@
   width: 24px;
   background-color: transparent;
   background-repeat: no-repeat;
+}
+.toggle--opened {
+  background-image: url("../img/main-nav-open-button-icon.svg");
+}
+.toggle--closed {
+  background-image: url("../img/close-button-icon.svg");
+}
+.toggle--no-js {
+  display: none;
 }
