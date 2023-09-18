@@ -7,6 +7,7 @@
   line-height: 16px;
   text-transform: uppercase;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -20,6 +21,10 @@
     top: 6px;
     left: 102px;
   }
+}
+
+.catalog-link:focus {
+  color: #b3b3b3;
 }
 
 @media (min-width: @tablet) {

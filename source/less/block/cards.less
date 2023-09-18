@@ -125,7 +125,14 @@
   }
 }
 
-.cards__button {
+@media (min-width: @desktop) {
+  .cards__header {
+    margin: -2px 12px 2px 12px;
+  }
+}
+
+.cards__button,
+.cards--button {
   min-height: 40px;
   display: block;
   box-sizing: border-box;
@@ -136,15 +143,18 @@
 
 
 @media (min-width: @tablet) {
-  .cards__button {
+  .cards__button,
+  .cards--button {
     min-width: 246px;
     padding: 7px 23px;
   }
 }
 
 @media (min-width: @desktop) {
-  .cards__button {
+  .cards__button,
+  .cards--button {
     min-width: 169px;
+    min-height: 37px;
   }
 }
 
@@ -156,12 +166,12 @@
 
 @media (min-width: @desktop) {
   .cards__table-container {
-    margin: 6px 0 49px;
+    margin: 6px 0 47px;
   }
 }
 
 
-.card__button--more {
+.card--button--more {
   width: 30px;
   height: 30px;
   background: url("../img/svg/plus.svg") no-repeat center;
@@ -172,7 +182,7 @@
 }
 
 @media (min-width: @tablet) {
-  .card__button--more {
+  .card--button--more {
     width: 60px;
     height: 60px;
     margin-left: 38%;
@@ -181,7 +191,7 @@
 }
 
 @media (min-width: @tablet) {
-  .card__button--more {
+  .card--button--more {
     margin-left: 35%;
     margin-top: 39px;
   }
