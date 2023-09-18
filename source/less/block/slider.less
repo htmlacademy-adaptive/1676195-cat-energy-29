@@ -75,11 +75,21 @@
   transition: all 2s;
   overflow: hidden;
   border-right: 4px solid #666666;
+  cursor: pointer;
 
   &::before {
     background-image: url("../img/slider/before-m.png");
   }
 }
+
+.slider__item--before:hover {
+  border-right: 4px solid #68b738;
+}
+
+.slider__item--before:active {
+  border-right: 4px solid #5eaa2f;
+}
+
 
 @media (min-width: @tablet) {
   .slider__item--before {
@@ -140,6 +150,14 @@
   z-index: 20;
   cursor: pointer;
   transition: all 2s;
+}
+
+.slider__button:hover {
+  background-image: url("../img/svg/thumb-hover.svg");
+}
+
+.slider__button:active {
+  background-image: url("../img/svg/thumb-active.svg");
 }
 
 .slider--state-before .slider__button {

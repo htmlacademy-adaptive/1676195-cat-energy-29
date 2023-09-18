@@ -51,6 +51,14 @@
   text-align: left;
 }
 
+.footer__conact-academy:hover {
+  color: rgba(68, 68, 68, 0.8);
+}
+
+.footer__conact-academy:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
 .footer__academy-wrapper {
   display: flex;
   justify-content: space-between;
@@ -145,19 +153,34 @@
 .footer__social-icon:active {
   fill: @promo-color;
   opacity: 0.6;
-}
-
-.footer__logo:focus {
-  fill: #3e3e3e;
+  cursor: pointer;
 }
 
 .footer__logo {
   fill: #111111;
+  cursor: pointer;
 }
 
 .footer__logo:hover {
   fill: #3e3e3e;
 }
+
+.footer__logo:focus {
+  fill: #6b6b6b;
+}
+
+.footer__academy-lable {
+  fill: rgba(102, 102, 102, 1);
+}
+
+.footer__academy-lable:hover {
+  fill: rgba(104, 183, 56, 1);
+}
+
+.footer__academy-lable:active {
+  fill: rgba(104, 183, 56, 1);
+}
+
 
 @media (min-width: @tablet) {
   .footer__academy-lable {

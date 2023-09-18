@@ -6,6 +6,24 @@
   position: relative;
 }
 
+@media (min-width: @tablet) {
+  .promo {
+    margin: 67px 0 73px;
+    background: url("../img/catalog/present-background-tablet@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo {
+    margin: 0 auto;
+    background: url("../img/catalog/present-background-desktop@1x.jpg") no-repeat 0 0;
+    background-size: cover;
+    width: 245px;
+    height: 288px;
+  }
+}
+
 .promo::after {
   content: "";
   position: absolute;
@@ -17,9 +35,36 @@
   display: block;
 }
 
+@media (min-width: @tablet) {
+  .promo::after {
+    top: 60px;
+    left: 81px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo::after {
+    top: 59px;
+    left: 83px;
+  }
+}
+
 .promo__present {
   padding: 187px 55px 44px 52px;
 }
+
+@media (min-width: @tablet) {
+  .promo__present {
+    padding: 74px 3px 69px 423px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo__present {
+    padding: 187px 24px 2px 39px;
+  }
+}
+
 
 .promo__text {
   color: #ffffff;
@@ -31,4 +76,17 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media (min-width: @tablet) {
+  .promo__text {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .promo__text {
+    text-align: center;
+    width: 165px;
+  }
 }
