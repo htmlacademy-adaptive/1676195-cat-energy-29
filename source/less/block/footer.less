@@ -109,6 +109,16 @@
 }
 
 @media (min-width: @tablet) {
+  .footer__map-block::after {
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: @tablet) {
   .footer__map-block::before {
     width: 113px;
     height: 108px;
