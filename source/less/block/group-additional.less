@@ -164,3 +164,29 @@
     grid-column: 1/-1;
   }
 }
+
+.group-additional__title--group {
+  display: inline-block;
+  position: relative;
+  font-family: @Title-font;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #ffffff;
+  z-index: 6;
+}
+
+@media (min-width: @tablet) {
+  .group-additional__title--group {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .group-additional__title--group {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 3px 38px;
+  }
+}
