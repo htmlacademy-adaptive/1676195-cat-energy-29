@@ -11,7 +11,7 @@
 
 @media (min-width: @desktop) {
   .extra {
-    padding: 50px 0 75px;
+    padding: 55px 0 75px;
     min-width: 1440px;
     margin: 0 auto;
   }
@@ -41,13 +41,15 @@
 
 @media (min-width: @tablet) {
   .extra__title {
-    padding: 15px 41px 33px 38px;
+    padding: 13px 40px 11px 39px;
+    margin: 3px 0 22px 31px;
   }
 }
 
 @media (min-width: @desktop) {
   .extra__title {
-    padding: 3px 38px 0 38px;
+    padding: 1px 37px 0;
+    margin: -4px 0 0 72px;
   }
 }
 
@@ -89,7 +91,7 @@
 @media (min-width: @tablet) {
   .extra__item {
     flex-direction: row;
-    padding: 14px 39px 28px;
+    padding: 14px 38px 27px;
     justify-content: space-between;
     gap: 5px 195px;
     border-top: unset;
@@ -102,8 +104,8 @@
 
 @media (min-width: @desktop) {
   .extra__item {
-    gap: 0 29px;
-    padding: 13px 0 4px 39px;
+    gap: 0 31px;
+    padding: 12px 0 4px 38px;
   }
 }
 
@@ -229,7 +231,7 @@
 
 @media (min-width: @desktop) {
   .extra__wrapper {
-    padding: 76px 29px 0 74px;
+    padding: 76px 29px 8px 74px;
     display: flex;
     width: 1440px;
     margin: 0 auto;
@@ -254,5 +256,32 @@
 @media (min-width: @desktop) {
   .extra__button {
     min-width: 244px;
+    padding: 12px 22px;
+  }
+}
+
+.extra__title--group {
+  display: inline-block;
+  position: relative;
+  font-family: @Title-font;
+  font-size: 24px;
+  line-height: 26px;
+  background-color: #ffffff;
+  z-index: 6;
+}
+
+@media (min-width: @tablet) {
+  .extra__title--group {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 12px 40px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__title--group {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 3px 38px;
   }
 }
