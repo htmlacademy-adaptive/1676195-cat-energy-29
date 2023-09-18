@@ -38,9 +38,9 @@
 
 @media (min-width: @desktop) {
   .catalog__list {
-    grid-template-columns: repeat(4, 245px);
-    gap: 117px 80px;
-    padding: 0 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 71px 82px;
+    padding: 0 108px;
   }
 }
 
@@ -63,7 +63,7 @@
 
 @media (min-width: @desktop) {
   .catalog__title {
-    margin: 45px 31px 116px 110px;
+    margin: 42px 31px 116px 110px;
   }
 }
 // .catalog__item {
@@ -88,5 +88,12 @@
     top: 48px;
     left: 0;
     z-index: -1;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog__item::before {
+    height: 100%;
+    top: 47px;
   }
 }

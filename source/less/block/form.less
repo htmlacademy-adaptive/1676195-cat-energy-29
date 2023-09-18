@@ -75,6 +75,9 @@
   white-space: nowrap;
   min-height: 45px;
   padding: 0 19px 0 14px;
+  background-color: #ffffff;
+  border: 1px solid #e7e7e7;
+  appearance: none;
 }
 
 @media (min-width: @tablet) {
@@ -88,6 +91,11 @@
 
 .form__lable-input--name {
   min-width: 228px;
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -104,6 +112,11 @@
 
 .form__lable-input--weight {
   min-width: 208px;
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: @tablet) {
@@ -120,6 +133,11 @@
 
 .form__lable-input--age {
   min-width: 174px;
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+    outline-offset: -2px;
+  }
 }
 
 @media (min-width: @tablet) {
