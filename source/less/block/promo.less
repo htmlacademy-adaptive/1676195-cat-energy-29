@@ -4,13 +4,22 @@
   background: url("../img/catalog/present-background@1x.jpg") no-repeat 0 0;
   background-size: cover;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/present-background@2x.jpg");
+  }
+
 }
 
 @media (min-width: @tablet) {
   .promo {
     margin: 67px 0 73px;
-    background: url("../img/catalog/present-background-tablet@1x.jpg") no-repeat 0 0;
+    background-image: url("../img/catalog/present-background-tablet@1x.jpg") no-repeat 0 0;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/present-background-tablet@2x.jpg") no-repeat 0 0;
+    }
   }
 }
 
@@ -21,6 +30,10 @@
     background-size: cover;
     width: 245px;
     height: 288px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/present-background-desktop@2x.jpg") no-repeat 0 0;
+    }
   }
 }
 
