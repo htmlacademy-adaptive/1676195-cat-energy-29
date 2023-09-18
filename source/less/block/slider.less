@@ -79,6 +79,10 @@
 
   &::before {
     background-image: url("../img/slider/before-m.png");
+    
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/before-m@2x.png");
+    }
   }
 }
 
@@ -108,6 +112,10 @@
 @media (min-width: @tablet) {
   .slider__item--before::before {
     background-image: url("../img/slider/before-t.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/before-t@2x.png")
+    }
   }
 }
 
@@ -124,12 +132,20 @@
 
   &::before {
     background-image: url("../img/slider/after-m.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/after-m@2x.png");
+    }
   }
 }
 
 @media (min-width: @tablet) {
   .slider__item--after::before {
     background-image: url("../img/slider/after-t.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/slider/after-t@2x.png");
+    }
   }
 }
 

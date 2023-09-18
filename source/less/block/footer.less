@@ -91,12 +91,20 @@
     left: 42%;
     top: 38%;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-pin@2x.png");
+    }
   }
 
   &::after {
     position: relative;
     background-image: url("../img/map-mobile.jpg");
     background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg")  
+    }
   }
 }
 

@@ -8,6 +8,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body body">
     <header class="main">
@@ -117,7 +119,14 @@
             </div>
               <div class="example__slider-wrapper slider">
                 <ul class="slider__block">
-                    <li class="slider__item slider__item--before slider__item--state-before"></li>
+                    <li class="slider__item slider__item--before slider__item--state-before">
+                      <picture>
+                        <source type="image/webp" media="(min-width: 768px)" srcset="efor-m.webp 1x, efor-m@2x.webp 2x" width="560" height="512">
+                        <source media="(min-width: 768px)" srcset="img/slider/befor-t.png 1x, img/slider/befor-t@2x.png 2x" type="image/png" width="560" height="512">
+                        <img class="slider__image" src="img/slider/befor-m.png" srcset="img/img/slider/befor-m@2x.png" width="280" height="256" alt="Фото кота до.">
+                      </picture>    
+                      </picture>
+                    </li>
                     <li class="slider__item slider__item--after"></li>
                 </ul>
                   <button class="slider__button" type="button">
