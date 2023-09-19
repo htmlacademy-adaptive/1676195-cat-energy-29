@@ -6,6 +6,10 @@ const sliderButton = document.querySelector('.slider__button');
 
 const slider = document.querySelector('.slider');
 
+navList.classList.remove('main-nav__list--no-js');
+mainNav.classList.remove('main-nav--no-js');
+navToggle.classList.remove('main-nav__toggle--no-js');
+
 if (navToggle) {
   navToggle.addEventListener('click', function (importantEvent) {
     if(navList.classList.contains('main-nav__list--closed')) {
