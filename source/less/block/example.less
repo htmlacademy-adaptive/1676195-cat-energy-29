@@ -14,7 +14,7 @@
 @media (min-width: @desktop) {
   .example {
     padding: 0;
-    background: linear-gradient(#ffffff 30.6%, #f2f2f2 25%, #f2f2f2 31%);
+    background: transparent;
     width: 100%;
     margin: 0 auto;
   }
@@ -40,6 +40,14 @@
     gap: 229px;
     width: 1440px;
     margin: 0 auto;
+  }
+
+  .example__wrapper::before {
+    background: #ad2222;
+    display: flex;
+    z-index: -1;
+    top: 50px;
+    min-height: calc(100% - 135px);
   }
 }
 
