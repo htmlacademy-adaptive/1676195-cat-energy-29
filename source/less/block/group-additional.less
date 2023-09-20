@@ -118,6 +118,12 @@
   border: 1px solid #cdcdcd;
 }
 
+.group-additional__checkbox-label:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
 @media (min-width: @tablet) {
   .group-additional__checkbox-label::before {
     width: 40px;
@@ -157,6 +163,10 @@
 
 .group-additional__input:checked + .group-additional__checkbox-label::after {
   display: block;
+}
+
+.group-additional__input:disabled + .group-additional__checkbox-label {
+  opacity: 0.3;
 }
 
 @media (min-width: @desktop) {
