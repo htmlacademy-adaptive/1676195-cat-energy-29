@@ -154,6 +154,11 @@
 .group-contacts__icon--email {
   right: 36px;
   top: 3px;
+  stroke: #222222; 
+}
+
+.group-contacts__icon--email:hover {
+  stroke: @promo-color;
 }
 
 @media (min-width: @tablet) {
@@ -166,6 +171,19 @@
 .group-contacts__icon--phone {
   right: 37px;
   top: 4px;
+  stroke: #222222; 
+}
+
+.group-contacts__icon--phone:hover {
+  stroke: @promo-color;
+}
+
+.group-contacts__input--input-mail:invalid+.group-contacts__icon--email {
+  stroke: #ff8282;
+}
+
+.group-contacts__input--input-phone:invalid+.group-contacts__icon--phone {
+  stroke: #ff8282;
 }
 
 @media (min-width: @tablet) {

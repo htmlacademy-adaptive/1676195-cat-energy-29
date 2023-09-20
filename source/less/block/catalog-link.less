@@ -23,13 +23,21 @@
   }
 }
 
-.catalog-link::after:hover {
-  background-image: url("../img/svg/arrow-hover.svg");
-  width: 32px;
+.catalog-link:hover {
+  color: inherit;
+
+  &::after {
+    background-image: url("../img/svg/arrow-hover.svg");
+  }
 }
 
-.catalog-link:focus {
-  color: #b3b3b3;
+.catalog-link:active {
+  color:  #B3B3B3;
+
+  &::after {
+    background-image: url("../img/svg/arrow-hover.svg");
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet) {
