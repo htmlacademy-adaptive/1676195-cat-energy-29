@@ -10,9 +10,11 @@
 }
 .toggle--opened {
   background-image: url("../img/main-nav-open-button-icon.svg");
+  right: -90%;
 }
 .toggle--closed {
   background-image: url("../img/close-button-icon.svg");
+  right: -90%;
 }
 .toggle--no-js {
   display: none;

@@ -53,7 +53,7 @@
     padding: 62px 40px 25px 39px;
     max-width: 1300px;
     display: flex;
-    gap: 0 104px;
+    gap: 30px 104px;
     flex-wrap: wrap;
   }
 }
@@ -118,6 +118,12 @@
   border: 1px solid #cdcdcd;
 }
 
+.group-additional__checkbox-label:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
 @media (min-width: @tablet) {
   .group-additional__checkbox-label::before {
     width: 40px;
@@ -157,6 +163,10 @@
 
 .group-additional__input:checked + .group-additional__checkbox-label::after {
   display: block;
+}
+
+.group-additional__input:disabled + .group-additional__checkbox-label {
+  opacity: 0.3;
 }
 
 @media (min-width: @desktop) {

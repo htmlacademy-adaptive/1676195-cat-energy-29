@@ -80,6 +80,12 @@
   border: 1px solid #cdcdcd;
 }
 
+.group-program__checkbox-label:hover {
+  &::before {
+    border: 1px solid #bababa;
+  }
+}
+
 @media (min-width: @tablet) {
   .group-program__checkbox-label::before {
     width: 40px;
@@ -112,4 +118,8 @@
 
 .group-program__input:checked + .group-program__checkbox-label::after {
   display: block;
+}
+
+.group-program__input:disabled + .group-program__checkbox-label {
+  opacity: 0.3;
 }

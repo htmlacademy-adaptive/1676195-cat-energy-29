@@ -1,15 +1,15 @@
 .cards {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(2, 140px);
-  padding: 16px 20px 25px;
+  grid-template-columns: 1fr 1fr;
+  padding: 16px 20px 24px;
   margin: 0;
   border-top: 1px solid #ebebeb;
 }
 
 @media (min-width: @tablet) {
   .cards {
-    display: block;
+    display: flex;
     box-sizing: border-box;
     flex-direction: column;
     border: 0;
@@ -51,14 +51,14 @@
 
 @media (min-width: @tablet) {
   .cards__link--image {
-    margin: 31px 0 70px 0;
+    margin: 31px 0 70px;
     padding: 0;
   }
 }
 
 @media (min-width: @desktop) {
   .cards__link--image {
-    margin: 28px 0 64px;
+    margin: 28px 0 58px;
     padding: 0;
   }
 }
@@ -94,7 +94,7 @@
 }
 
 .cards__image-small {
-  margin: 18px 0 0 0;
+  margin: 11px 0 -4px;
 }
 
 @media (min-width: @tablet) {
@@ -127,26 +127,25 @@
 
 @media (min-width: @desktop) {
   .cards__header {
-    margin: -2px 12px 2px 12px;
+    margin: -2px 16px 2px;
   }
 }
 
 .cards__button,
 .cards--button {
-  min-height: 40px;
-  display: block;
-  box-sizing: border-box;
-  min-width: 280px;
-  padding: 8px 20px;
-  margin: 0 auto;
+  position: relative;
+  grid-column: 1/-1;
+  padding: 11px 44px 10px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 
 @media (min-width: @tablet) {
   .cards__button,
   .cards--button {
-    min-width: 246px;
-    padding: 7px 23px;
+    padding: 8px 23px;
+    min-height: 40px;
   }
 }
 
@@ -154,19 +153,19 @@
   .cards__button,
   .cards--button {
     min-width: 169px;
-    min-height: 37px;
+    min-height: 40px;
   }
 }
 
 @media (min-width: @tablet) {
   .cards__table-container {
-    margin: 20px 0 43px;
+    margin: 1px 0 42px;
   }
 }
 
 @media (min-width: @desktop) {
   .cards__table-container {
-    margin: 6px 0 47px;
+    margin: 6px 0 45px;
   }
 }
 
@@ -176,8 +175,8 @@
   height: 30px;
   background: url("../img/svg/plus.svg") no-repeat center;
   color: transparent;
-  margin-top: 10px;
-  margin-left: 45%;
+  margin-top: 7px;
+  margin-left: 44%;
   border: none;
 }
 
@@ -186,13 +185,13 @@
     width: 60px;
     height: 60px;
     margin-left: 38%;
-    margin-top: 32px;
+    margin-top: 40px;
   }
 }
 
-@media (min-width: @tablet) {
+@media (min-width: @desktop) {
   .card--button--more {
-    margin-left: 35%;
+    margin-left: 34%;
     margin-top: 39px;
   }
 }
