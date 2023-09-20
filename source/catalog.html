@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link href="css/style.min.css" rel="stylesheet">
-    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
-  </head>
-  <body class="page page--body--forum">
-    <header class="main">
-      <div class="main__logo-wrapper">
-        <a class="main__logo">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" width="174" height="50">
-            <img class="main__logo-image" src="./img/svg/logo-mobile.svg" width="33" height="38" alt="магазин правильного питания для которов">
-          </picture>
-        </a>
-      </div>
-      <nav class="main-nav">
-          <button class="main-nav__toggle toggle toggle--opened" type="button">
-          <span class="visually-hidden">Открыть меню</span></button>
-          <ul class="main-nav__list site-list site-list--margin main-nav__list--opened site-list--margin site-list--margin-form main-nav__list--no-js">
-                  <li class="site-list__item">
-                    <a class="site-list__link site-list__link--dark" href="index.html"> главная</a>
-                  </li>
-                  <li class="site-list__item">
-                    <a class="site-list__link site-list__link--dark site-list__link--active"> каталог продукции </a>
-                  </li>
-                  <li class="site-list__item">
-                      <a class="site-list__link site-list__link--dark" href="form.html"> подбор программы </a>
-                  </li>
-                </ul>
-      </nav>
-      </header>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body class="page page--body--forum">
+  <header class="main">
+    <div class="main__logo-wrapper">
+      <a class="main__logo">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg" width="202" height="59">
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" width="174" height="50">
+          <img class="main__logo-image" src="./img/svg/logo-mobile.svg" width="33" height="38"
+            alt="магазин правильного питания для которов">
+        </picture>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle toggle toggle--opened toggle--no-js" type="button">
+        <span class="visually-hidden">Открыть меню</span></button>
+      <ul
+        class="main-nav__list site-list site-list--margin main-nav__list--opened site-list--margin site-list--margin-form main-nav__list--no-js">
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--dark" href="index.html"> главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--dark site-list__link--active"> каталог продукции </a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link site-list__link--dark" href="form.html"> подбор программы </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <main class="main-container">
     <h1 class="visually-hidden">Каталог продукции, чтобы ваш котик был здоровым и активным</h1>
     <section class="catalog">
@@ -47,10 +51,15 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-small-tablet@1x.webp 1x, img/catalog/catalog-image-1-small-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-1-small-mobile@1x.webp 1x, img/catalog/catalog-image-1-small-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-small-tablet@1x.png 1x, img/catalog/catalog-image-1-small-tablet@2x.png 2x"  width="200" height="210">
-                  <img class="cards__image" src="img/catalog/catalog-image-1-small-mobile@1x.png" srcset="img/catalog/catalog-image-1-small-mobile@2x.png 2x" width="140" height="107"
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-1-small-tablet@1x.webp 1x, img/catalog/catalog-image-1-small-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-1-small-mobile@1x.webp 1x, img/catalog/catalog-image-1-small-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-1-small-tablet@1x.png 1x, img/catalog/catalog-image-1-small-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image" src="img/catalog/catalog-image-1-small-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-1-small-mobile@2x.png 2x" width="140" height="107"
                   alt="Кэт Энерджи ПРО со вкусом курицы 500 г.">
               </picture>
             </a>
@@ -76,11 +85,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-big-tablet@1x.webp 1x, img/catalog/catalog-image-1-big-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-1-big-mobile@1x.webp 1x, img/catalog/catalog-image-1-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-1-big-tablet@1x.png 1x, img/catalog/catalog-image-1-big-tablet@2x.png 2x"  width="200" height="210">
-                  <img class="cards__image cards__image--desktop" src="img/catalog/catalog-image-1-big-mobile@1x.png" srcset="img/catalog/catalog-image-1-big-mobile@2x.png 2x"  width="140" height="107"
-                alt="Кэт Энерджи ПРО со вкусом курицы 1000 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-1-big-tablet@1x.webp 1x, img/catalog/catalog-image-1-big-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-1-big-mobile@1x.webp 1x, img/catalog/catalog-image-1-big-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-1-big-tablet@1x.png 1x, img/catalog/catalog-image-1-big-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image cards__image--desktop" src="img/catalog/catalog-image-1-big-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-1-big-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи ПРО со вкусом курицы 1000 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -105,11 +119,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-small-tablet@1x.webp 1x, img/catalog/catalog-image-2-small-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-2-small-mobile@1x.webp 1x, img/catalog/catalog-image-2-small-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-small-tablet@1x.png 1x, img/catalog/catalog-image-2-small-tablet@2x.png 2x"  width="200" height="210">
-                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-2-small-mobile@1x.png" srcset="img/catalog/catalog-image-2-small-mobile@2x.png 2x"  width="140" height="107"
-              alt="Кэт Энерджи ПРО со вкусом рыбы 500 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-2-small-tablet@1x.webp 1x, img/catalog/catalog-image-2-small-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-2-small-mobile@1x.webp 1x, img/catalog/catalog-image-2-small-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-2-small-tablet@1x.png 1x, img/catalog/catalog-image-2-small-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-2-small-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-2-small-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи ПРО со вкусом рыбы 500 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -134,11 +153,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-big-tablet@1x.webp 1x, img/catalog/catalog-image-2-big-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-2-big-mobile@1x.webp 1x, img/catalog/catalog-image-2-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-2-big-tablet@1x.png 1x, img/catalog/catalog-image-2-big-tablet@2x.png 2x" width="200" height="210">
-                  <img class="cards__image" src="img/catalog/catalog-image-2-big-mobile@1x.png" srcset="img/catalog/catalog-image-2-big-mobile@2x.png 2x"  width="140" height="107"
-                alt="Кэт Энерджи ПРО со вкусом рыбы 1000 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-2-big-tablet@1x.webp 1x, img/catalog/catalog-image-2-big-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-2-big-mobile@1x.webp 1x, img/catalog/catalog-image-2-big-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-2-big-tablet@1x.png 1x, img/catalog/catalog-image-2-big-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image" src="img/catalog/catalog-image-2-big-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-2-big-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи ПРО со вкусом рыбы 1000 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -163,11 +187,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-small-tablet@1x.webp 1x, img/catalog/catalog-image-3-small-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-3-small-mobile@1x.webp 1x, img/catalog/catalog-image-3-small-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-small-tablet@1x.png 1x, img/catalog/catalog-image-3-small-tablet@2x.png 2x"  width="200" height="210">
-                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-3-small-mobile@1x.png" srcset="img/catalog/catalog-image-3-small-mobile@2x.png 2x"  width="140" height="107"
-                alt="Кэт Энерджи Слим со вкусом гречки 500 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-3-small-tablet@1x.webp 1x, img/catalog/catalog-image-3-small-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-3-small-mobile@1x.webp 1x, img/catalog/catalog-image-3-small-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-3-small-tablet@1x.png 1x, img/catalog/catalog-image-3-small-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-3-small-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-3-small-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи Слим со вкусом гречки 500 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -192,11 +221,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-big-tablet@1x.webp 1x, img/catalog/catalog-image-3-big-tablet@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-3-big-mobile@1x.webp 1x, img/catalog/catalog-image-3-big-mobile@2x.webp 2x">
-                  <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-3-big-tablet@1x.png 1x, img/catalog/catalog-image-3-big-tablet@2x.png 2x"  width="200" height="210">
-                  <img class="cards__image" src="img/catalog/catalog-image-3-big-mobile@1x.png" srcset="img/catalog/catalog-image-3-big-mobile@2x.png 2x"  width="140" height="107"
-                alt="Кэт Энерджи Слим со вкусом кречки 1000 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-3-big-tablet@1x.webp 1x, img/catalog/catalog-image-3-big-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-3-big-mobile@1x.webp 1x, img/catalog/catalog-image-3-big-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-3-big-tablet@1x.png 1x, img/catalog/catalog-image-3-big-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image" src="img/catalog/catalog-image-3-big-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-3-big-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи Слим со вкусом кречки 1000 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -221,11 +255,16 @@
           <li class="catalog__item cards">
             <a class="cards__link cards__link--image" href="#">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/catalog/catalog-image-4-small-tablet@1x.webp 1x, img/catalog/catalog-image-4-small-tablet@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 10px)" srcset="img/catalog/catalog-image-4-small-mobile@1x.webp 1x, img/catalog/catalog-image-4-small-mobile@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/catalog/catalog-image-4-small-tablet@1x.png 1x, img/catalog/catalog-image-4-small-tablet@2x.png 2x"  width="200" height="210">
-                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-4-small-mobile@1x.png" srcset="img/catalog/catalog-image-4-small-mobile@2x.png 2x"  width="140" height="107"
-                alt="Кэт Энерджи Слим со вкусом риса 500 г.">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-4-small-tablet@1x.webp 1x, img/catalog/catalog-image-4-small-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 10px)"
+                  srcset="img/catalog/catalog-image-4-small-mobile@1x.webp 1x, img/catalog/catalog-image-4-small-mobile@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog/catalog-image-4-small-tablet@1x.png 1x, img/catalog/catalog-image-4-small-tablet@2x.png 2x"
+                  width="200" height="210">
+                <img class="cards__image cards__image-small" src="img/catalog/catalog-image-4-small-mobile@1x.png"
+                  srcset="img/catalog/catalog-image-4-small-mobile@2x.png 2x" width="140" height="107"
+                  alt="Кэт Энерджи Слим со вкусом риса 500 г.">
               </picture>
             </a>
             <div class="cards__table-container cards-item">
@@ -301,8 +340,8 @@
         <div class="extra__present promo">
           <div class="promo__present">
             <p class="promo__text">Закажите все и&nbsp;получите чехол&nbsp;для кота в подарок!
-              </p>
-            </div>
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -320,57 +359,66 @@
     </section>
     <div class="footer__map-block">
       <iframe class="footer__map-yandex"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197886!2d30.320472476878738!3d59.93871916209405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690818285662!5m2!1sru!2sru"
-      width="320" height="362" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257197886!2d30.320472476878738!3d59.93871916209405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1690818285662!5m2!1sru!2sru"
+        width="320" height="362" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <div class="footer__wrapper">
-      <svg class="footer__logo" width="128" height="24" viewBox="0 0 101 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="footer__logo" width="128" height="24" viewBox="0 0 101 18" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
         <use href="./img/sprite.svg#textlogo"></use>
       </svg>
+      <span class="visually-hidden">Ссылка на сайт академии</span>
       <ul class="footer__wrapper-list wrapper-list">
         <li class="wrapper-list__item">
           <ul class="footer__social-list social-list">
             <li class="footer__social-item social-list__item">
-          <a class="footer__social-link social-list__link"  href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Мы в VK</span>
-            <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#vkontakte"></use>
-            </svg>
-          </a>
+              <a class="footer__social-link social-list__link" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Мы в VK</span>
+                <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#vkontakte"></use>
+                </svg>
+                <span class="visually-hidden">Мы ВКонтакте</span>
+              </a>
             </li>
             <li class="footer__social-item social-list__item">
-            <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Мы в ютубе</span>
-            <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#youtube"></use>
-            </svg>
-            </a>
+              <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в ютубе</span>
+                <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#youtube"></use>
+                </svg>
+                <span class="visually-hidden">Мы в ютубе</span>
+              </a>
             </li>
             <li class="footer__social-item social-list__item">
-            <a class="footer__social-link" href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Мы в телеграме</span>
-            <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#telegram"></use>
-            </svg>
-            </a>
+              <a class="footer__social-link" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в телеграме</span>
+                <svg class="footer__social-icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use href="./img/sprite.svg#telegram"></use>
+                </svg>
+                <span class="visually-hidden">Мы в телеграме</span>
+              </a>
             </li>
           </ul>
         </li>
         <li class="wrapper-list__item">
-        <div class="footer  footer--academy-wrapper">
+          <div class="footer  footer--academy-wrapper">
             <a class="footer__conact" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Официальный сайт HTML Академии</span>
-          <span class="footer__conact footer__conact-academy">HTML Academy</span>
+              <span class="visually-hidden">Официальный сайт HTML Академии</span>
+              <span class="footer__conact footer__conact-academy">HTML Academy</span>
             </a>
             <a class="footer__conact" href="https://htmlacademy.ru/">
-          <svg class="footer__academy-lable" width="27" height="34" viewBox="0 0 27 34" xmlns="http://www.w3.org/2000/svg">
-            <use href="./img/sprite.svg#logo-html"></use>
-          </svg>
+              <svg class="footer__academy-lable" width="27" height="34" viewBox="0 0 27 34"
+                xmlns="http://www.w3.org/2000/svg">
+                <use href="./img/sprite.svg#logo-html"></use>
+              </svg>
+              <span class="visually-hidden">Официальный сайт HTML Академии</span>
             </a>
-        </div>
+          </div>
         </li>
-    </ul>
+      </ul>
     </div>
   </footer>
   <script src="./js/script.js"></script>

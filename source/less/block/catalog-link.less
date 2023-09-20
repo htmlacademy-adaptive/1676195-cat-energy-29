@@ -13,7 +13,7 @@
     content: "";
     position: absolute;
     display: block;
-    background-image: url("../img/arrow.svg");
+    background-image: url("../img/svg/arrow.svg");
     width: 32px;
     height: 10px;
     background-repeat: no-repeat;
@@ -21,6 +21,11 @@
     top: 6px;
     left: 102px;
   }
+}
+
+.catalog-link::after:hover {
+  background-image: url("../img/svg/arrow-hover.svg");
+  width: 32px;
 }
 
 .catalog-link:focus {
