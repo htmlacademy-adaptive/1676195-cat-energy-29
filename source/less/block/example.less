@@ -2,33 +2,35 @@
   position: relative;
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet) {
   .example {
     padding-top: 0;
-  }
+ }
 }
 
 @media (min-width: @desktop) {
   .example {
     padding: 0;
-    background: transparent;
     width: 100%;
     margin: 0 auto;
+    background-color: #f2f2f2;
   }
 }
 
 .example__wrapper {
   background-color: @examle-color;
   padding: 23px 3px 40px 19px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet) {
   .example__wrapper {
-    background: linear-gradient(#ffffff 58.5%, #eaeaea 56%, #eaeaea 61%);
-    padding: 83px 20px 40px 30px;
+    background: linear-gradient(#fff 52.5%,#eaeaea 48%,#eaeaea 61%);
+    padding: 55px 20px 40px 30px;
   }
 }
 
@@ -41,14 +43,6 @@
     width: 1440px;
     margin: 0 auto;
   }
-
-  // .example__wrapper::before {
-  //   background: #ad2222;
-  //   display: flex;
-  //   z-index: -1;
-  //   top: 50px;
-  //   min-height: calc(100% - 135px);
-  // }
 }
 
 @media (min-width: @tablet) {
@@ -59,7 +53,20 @@
 
 @media (min-width: @desktop) {
   .example__slider-wrapper {
-    background: transparent;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.example__title-wrapper {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet) {
+  .example__title-wrapper {
+    background-color: #ffffff;
   }
 }
 
@@ -68,6 +75,8 @@
     background-color: #ffffff;
     display: block;
     padding: 0;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -78,8 +87,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
-  margin: 0;
-  margin-bottom: 41px;
 }
 
 @media (min-width: @tablet) {
@@ -88,15 +95,24 @@
     line-height: 60px;
     margin-bottom: 61px;
     margin-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding:  41px 29px 6px;
   }
 }
 
 @media (min-width: @desktop) {
   .example__title {
-    margin-bottom: 147px;
+    margin: 0px auto;
+    width: 1220px;
+    padding: 70px 0 76px 0px;
   }
 }
 
+.example__stats {
+  margin: 0 auto;
+  padding: 15px 0 0 0;
+}
 
 @media (min-width: @tablet) {
   .example__stats {
@@ -172,6 +188,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
+  margin: 0 auto;
 }
 
 @media (min-width: @tablet) {
