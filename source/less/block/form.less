@@ -80,6 +80,18 @@
   appearance: none;
 }
 
+
+.form__lable-input::-webkit-outer-spin-button,
+.form__lable-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form__lable-input--weight,
+.form__lable-input--age {
+  appearance: textfield;
+}
+
+
 @media (min-width: @tablet) {
   .form__lable-input {
     font-size: 20px;
@@ -91,6 +103,7 @@
 
 .form__lable-input--name {
   min-width: 228px;
+  min-height: 52px;
 
   &:invalid {
     outline: 2px solid #ff8282;
@@ -112,6 +125,7 @@
 
 .form__lable-input--weight {
   min-width: 208px;
+  min-height: 52px;
 
   &:invalid {
     outline: 2px solid #ff8282;
@@ -133,6 +147,7 @@
 
 .form__lable-input--age {
   min-width: 174px;
+  min-height: 52px;
 
   &:invalid {
     outline: 2px solid #ff8282;
