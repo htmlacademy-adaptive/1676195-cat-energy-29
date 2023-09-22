@@ -1,13 +1,11 @@
-.main-nav {
-  display: flex;
-  padding: 0;
-  margin: 0;
-}
+// .main-nav {
+
+// }
 
 .main-nav__toggle {
   position: absolute;
   right: -270px;
-  top: -22px;
+  top: -21px;
 }
 
 @media (min-width: @tablet) {
@@ -21,12 +19,12 @@
   position: relative;
   background-color: #ffffff;
   padding: 0;
-  right: 12px;
   width: 100%;
 }
 
 .main-nav__list--closed {
   display: block;
+  top: -15px;
 }
 
 .main-nav__list--opened {
@@ -42,11 +40,11 @@
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
-    padding-right: 35px;
+    padding-right: 0;
     padding-top: 24px;
-    gap: 34px;
+    gap: 28px;
     width: auto;
-    left: 274px;
+    justify-content: flex-end;
   }
 }
 
@@ -59,9 +57,8 @@
 @media (min-width: @desktop) {
   .main-nav__list {
     max-width: 517px;
-    justify-content: space-between;
+    justify-content: flex-end;
     column-gap: 35px;
-    left: 849px;
   }
 }
 

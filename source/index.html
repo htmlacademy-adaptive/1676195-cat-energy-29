@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,16 +15,14 @@
 
 <body class="page__body body">
   <header class="main">
-    <div class="main__logo-wrapper">
-      <a class="main__logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg" width="202" height="59" />
-          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" width="174" height="50" />
-          <img class="main__logo-image" src="./img/svg/logo-mobile.svg" width="33" height="38"
-            alt="магазин правильного питания для которов" />
-        </picture>
-      </a>
-    </div>
+    <a class="main__logo">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/svg/logo-desktop.svg" width="202" height="59" />
+        <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" width="174" height="50" />
+        <img class="main__logo-image" src="./img/svg/logo-mobile.svg" width="33" height="38"
+          alt="магазин правильного питания для которов" />
+      </picture>
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle toggle toggle--opened toggle--no-js" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -112,7 +111,6 @@
       </div>
       <div class="example__wrapper">
         <div class="example__desktop-wrapper">
-
           <p class="example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
             на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
@@ -136,14 +134,16 @@
             </div>
           </div>
         </div>
-        <div class="example__slider-wrapper slider">
-          <ul class="slider__block">
-            <li class="slider__item slider__item--before slider__item--state-before"></li>
-            <li class="slider__item slider__item--after"></li>
-          </ul>
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Кнопка смещения слайдера влево или вправо</span>
-          </button>
+        <div class="example__slider-wrapper">
+          <div class="slider">
+            <ul class="slider__block">
+              <li class="slider__item slider__item--before slider__item--state-before"></li>
+              <li class="slider__item slider__item--after"></li>
+            </ul>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Кнопка смещения слайдера влево или вправо</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
