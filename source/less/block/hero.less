@@ -16,7 +16,8 @@
     min-height: 697px;
     top: -150px;
     width: 50%;
-    transform: translateX(100%);
+    // transform: translateX(100%);
+    right: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/cat-background-desk@2x.jpg");
@@ -33,13 +34,15 @@
 
 @media (min-width: @tablet) {
   .hero--margin-tablet {
-    margin-bottom: 372px;
+    width: 709px;
+    margin: 0 auto 372px;
   }
 }
 
 @media (min-width: @desktop) {
   .hero--margin-tablet {
     margin-bottom: 110px;
+    width: 100%;
   }
 }
 
@@ -58,7 +61,7 @@
 
 @media (min-width: @desktop) {
   .hero__container {
-    width: @desktop;
+    width: 1220px;
     margin: 0 auto;
   }
 }
@@ -106,7 +109,7 @@
 
 @media (min-width: @desktop) {
   .hero__wrapper {
-    width: @desktop;
+    width: 1220px;
     margin: 0 auto;
   }
 }
@@ -147,15 +150,15 @@
     min-height: 609px;
     background-image: url("../img/hero-food-desktop.png");
     background-color: transparent;
-    left: 112px;
+    left: 50%;
     top: -157px;
-    transform: translateY(96px);
+    transform: translate(-30%, 100px);
     z-index: 1;
+    width: 552px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-food-desktop@2x.png");
-      min-height: 499px;
-      top: -101px;
+      transform: translate(-30%, 100px);
     }
   }
 }
@@ -179,9 +182,9 @@
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    margin: 16px auto 40px;
-    padding-right: 233px;
-    padding-left: 119px;
+    margin: 16px auto 39px;
+    padding-right: 90px;
+    padding-left: 91px;
     text-align: left;
   }
 }
@@ -189,8 +192,8 @@
 @media (min-width: @desktop) {
   .hero__title {
     margin: 65px auto 40px;
-    padding-right: 684px;
-    padding-left: 189px;
+    padding-right: 572px;
+    padding-left: 78px;
   }
 }
 
@@ -214,13 +217,13 @@
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    padding-left: 120px;
+    padding-left: 90px;
   }
 }
 
 @media (min-width: @desktop) {
   .hero__slogan {
-    padding-left: 190px;
+    padding-left: 79px;
     width: 500px;
     line-height: 20px;
   }

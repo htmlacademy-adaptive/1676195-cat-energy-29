@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 45px 77px;
-    padding: 53px 0;
+    padding: 58px 0;
   }
 }
 
@@ -16,6 +16,10 @@
   padding: 0 20px;
   border: 0;
   position: relative;
+}
+
+.form__group-program {
+  margin-bottom: 25px;
 }
 
 .form__group-contacts {
@@ -37,6 +41,11 @@
   color: #444444;
   white-space: nowrap;
   margin-bottom: 14px;
+  gap: 13px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media (min-width: @tablet) {
@@ -44,13 +53,13 @@
     font-size: 20px;
     line-height: normal;
     margin-bottom: 20px;
+    gap: 5px;
   }
 }
 
 .form__lable {
   padding: 0;
   margin: 0;
-  margin-right: 10px;
 }
 
 @media (min-width: @tablet) {
@@ -74,12 +83,13 @@
   color: #444444;
   white-space: nowrap;
   min-height: 45px;
-  padding: 0 19px 0 14px;
   background-color: #ffffff;
   border: 1px solid #e7e7e7;
   appearance: none;
+  box-sizing: border-box;
+  padding: 4px 6px 3px 15px;
+  width: 100%;
 }
-
 
 .form__lable-input::-webkit-outer-spin-button,
 .form__lable-input::-webkit-inner-spin-button {
@@ -102,8 +112,7 @@
 }
 
 .form__lable-input--name {
-  min-width: 228px;
-  min-height: 52px;
+  // min-width: 228px;
 
   &:invalid {
     outline: 2px solid #ff8282;
@@ -124,9 +133,7 @@
 }
 
 .form__lable-input--weight {
-  min-width: 208px;
-  min-height: 52px;
-
+  // min-width: 207px;
   &:invalid {
     outline: 2px solid #ff8282;
     outline-offset: -2px;
@@ -146,8 +153,8 @@
 }
 
 .form__lable-input--age {
-  min-width: 174px;
-  min-height: 52px;
+  // min-width: 173px;
+
 
   &:invalid {
     outline: 2px solid #ff8282;
@@ -168,7 +175,7 @@
 }
 
 .form__button-container {
-  padding: 0 20px 32px 20px;
+  padding: 0 20px 73px;
 }
 
 .form__submit-button {
@@ -182,7 +189,7 @@
 @media (min-width: @tablet) {
   .form__submit-button {
     width: 282px;
-    margin: 3px 0 0 41px;
+    margin: 9px 0 0 51px;
     font-size: 20px;
     line-height: normal;
     height: 52px;
@@ -201,12 +208,12 @@
   .form__button-container {
     display: flex;
     align-items: center;
-    gap: 58px 0;
-    padding: 2px 114px 72px 30px;
   }
 
   .form__explanation {
     font-size: 16px;
+    margin: 0;
+    padding: 0 61px 0;
   }
 }
 
@@ -221,7 +228,7 @@
 
   .form__button-container {
     margin: 0 auto;
-    padding: 0 7px 23px 39px;
+    padding: 0 7px 17px 39px;
     width: 1300px;
     grid-column: 1/-1;
     gap: 40px 76px;
@@ -234,5 +241,6 @@
 
   .form__explanation {
     margin: 0;
+    padding: 0;
   }
 }

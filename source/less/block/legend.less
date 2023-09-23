@@ -4,15 +4,15 @@
 
 @media (min-width: @tablet) {
   .legend {
-    padding: 21px 0 69px;
+    padding: 21px 1px 62px;
     border-bottom: 1px solid #e6e6e6;
   }
 }
 
 @media (min-width: @desktop) {
   .legend {
-    padding: 5px 47px 18px 79px;
-    width: @desktop;
+    padding: 5px 0 18px;
+    width: 1220px;
     margin: 0 auto;
     border-bottom: none;
   }
@@ -36,14 +36,16 @@
   font-weight: 400;
   line-height: 40px;
   margin: -3px 0 29px;
-}
 
-@media (min-width: @tablet) {
-  .legend__title {
+  @media (min-width: @tablet) {
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 61px;
     margin-left: 31px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 0;
   }
 }
 
@@ -56,9 +58,9 @@
   .legend__list {
     display: grid;
     grid-template-columns: repeat(2, 274px);
-    gap: 80px 110px;
+    gap: 78px 108px;
     margin: 0;
-    padding: 0;
+    padding: 0 30px;
   }
 }
 
@@ -66,6 +68,7 @@
   .legend__list {
     grid-template-columns: repeat(4, 230px);
     gap: 95px;
+    padding: 0;
   }
 }
 
@@ -111,7 +114,7 @@
     width: 80px;
     height: 80px;
     top: 12px;
-    left: 30px;
+    left: 0;
   }
 }
 
@@ -119,14 +122,16 @@
   .legend__item {
     font-size: 16px;
     line-height: 24px;
-    padding: 122px 0 40px 30px;
+    padding: 122px 0 43px 0;
     margin: 0;
+    width: 245px;
   }
 }
 
 @media (min-width: @desktop) {
   .legend__item {
-    width: 298px;
+    width: 280px;
+    padding: 122px 0 39px;
   }
 }
 
@@ -142,23 +147,16 @@
     line-height: 280px;
     font-weight: 400;
     text-align: center;
-    left: 72px;
-    top: -28px;
+    left: 55px;
+    top: -27px;
     color: #f2f2f2;
-  }
-}
-
-@media (min-width: @tablet) {
-  .legend__item::before {
-    left: 72px;
-    top: -28px;
   }
 }
 
 @media (min-width: @desktop) {
   .legend__item::before {
-    left: 61px;
-    top: -28px;
+    left: 35px;
+    top: -29px;
   }
 }
 
