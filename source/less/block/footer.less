@@ -22,7 +22,7 @@
 @media (min-width: @tablet) {
   .footer__wrapper {
     display: flex;
-    padding: 61px 27px;
+    padding: 61px 33px;
     justify-content: space-between;
   }
 }
@@ -40,7 +40,8 @@
 }
 
 .footer__conact {
-  padding: 0 5px;
+  padding: 0;
+  margin: 0;
 }
 
 .footer__conact-academy {
@@ -50,6 +51,10 @@
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+
+  @media (min-width: @tablet) {
+    margin-right: 17px;
+  }
 }
 
 .footer__conact-academy:hover {
@@ -65,13 +70,15 @@
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  padding: 0 15px 0 10px;
-}
+  padding: 16px 21px 0 20px;
 
-@media (min-width: @tablet) {
-  .footer--academy-wrapper {
+  @media (min-width: @tablet) {
     align-items: normal;
     padding: 1px 3px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 1px 6px 0 0;
   }
 }
 
@@ -169,7 +176,8 @@
 }
 
 .footer__social-icon--logo {
-  margin: -3px;
+  margin: 0 auto;
+  margin-bottom: 14px;
 }
 
 .footer__social-icon:hover {
