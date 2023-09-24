@@ -108,6 +108,10 @@
   }
 }
 
+.group-contacts__input:focus + .group-contacts__icon {
+  stroke: @promo-color;
+}
+
 @media (min-width: @tablet) {
   .group-contacts--input-mail,
   .group-contacts__input--input-mail {
@@ -115,17 +119,9 @@
   }
 }
 
-// @media (min-width: @desktop) {
-//     .group-contacts--input-mail,
-//     .group-contacts__input--input-mail {
-//   // //   width: 494px;
-//   }
-// }
 
 .group-contacts--input-phone,
 .group-contacts__input--input-phone {
-  // min-width: 200px;
-
   &:invalid {
     outline: 2px solid #ff8282;
     outline-offset: -2px;
