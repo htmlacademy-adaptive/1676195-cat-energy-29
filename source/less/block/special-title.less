@@ -9,11 +9,14 @@
   width: 100%;
   display: block;
   position: relative;
-}
 
-@media (min-width: @tablet) {
-  .special-title {
+  @media (min-width: @tablet) {
     margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: -110px;
   }
 }
 
@@ -63,5 +66,6 @@
   .special-title__wrapper {
     margin: 0 auto;
     display: block;
+    width: 1220px;
   }
 }
